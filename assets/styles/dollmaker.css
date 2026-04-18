@@ -1,0 +1,48 @@
+@keyframes bgscroll {
+        to {background-position: 100px 100px}
+    }
+
+    body {
+        margin:0;
+        font-family:arial;
+        background-image:url("assets/bg/tile.png");
+        background-position: 0px 0px;
+        animation: bgscroll 10s linear infinite;
+    }
+
+    .container {
+        margin:20px;
+        padding:20px;
+        width:fit-content;
+        margin:auto;
+        color-scheme: light dark;
+        background-color:light-dark(white, #222);
+        color: light-dark(black, lightgrey);}
+
+    .sourceimg, #disposal, #coloring {
+        display: none;
+    }
+    .selection {
+        max-width:100%;
+        display:grid;grid-template-columns: 25% 25% 25% 25%;row-gap: 5px;
+        font-size:13px;
+        align-items:center;
+    }
+    .selection p {padding:0px 10px;}
+
+    input, select {height:50%;max-height:100px;width:100%;}
+
+    #dollpreview {
+        border:1px solid black;
+
+        background-image:url("assets/bg/tile.png");
+        background-position: 0px 0px;
+        animation: bgscroll 10s linear infinite;
+    }
+
+    .credits {
+        width:100%;
+        color:light-dark(#0026bd, #53baff);
+    }
+
+    .credits td {width:50%;}

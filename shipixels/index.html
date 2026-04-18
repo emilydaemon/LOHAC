@@ -1,0 +1,309 @@
+<head>
+    <title>Shipixels - The Homestuck Clubhouse</title>
+    <link rel="stylesheet" href="/index.css">
+    <link rel="stylesheet" href="/navigation.css">
+    <link rel="stylesheet" href="/fonts.css">
+
+    <meta name="keywords" content="Homestuck, shipping, generator, ministrife, pixelings">
+    <meta name="description" content="An image generator for Homestuck ship pixels">
+
+    <link rel="icon" type="image/x-icon" href="/shipixels/favicon.ico">
+</head>
+
+<style>
+    @keyframes bgscroll {
+        to {
+            background-position: 20px 20px
+        }
+    }
+
+    body {
+        font-family: arial;
+        color-scheme: light dark;
+        background-color: light-dark(white, black);
+        image-rendering: pixelated;
+    }
+
+    .container {
+        border-radius: 20px;
+        max-width: 800px;
+        margin: auto;
+        padding: 30px;
+        background-color: light-dark(lightgrey, #222);
+        color: light-dark(black, lightgrey)
+    }
+
+    .preview {
+        padding: 1px;
+        scale: 300%;
+        margin: 80px;
+        border: 1px solid rgba(0, 0, 0, 0.2);
+        background: url(assets/tile.png);
+        background-size: 20px;
+        animation: bgscroll 10s linear infinite;
+    }
+
+    #right {
+        display: none;
+    }
+
+    .selection {
+        max-width: 600px;
+        margin: 20px auto;
+        display: grid;
+        grid-template-columns: 50% 50%;
+    }
+</style>
+
+<body>
+    <ul class="navbar">
+        <a href="/index.html"><img src="/assets/logos/logo_light.png" height="30px" style="float:left;"></a>
+
+
+        <li><a href="/directoriess.html">Games</a></li>
+        <li><a href="/directories/resources.html">Resources</a></li>
+        <li><a href="/directories/tools.html">Programs & Tools</a></li>
+        <li><a href="/directories/fanfiction.html">Fanfiction</a></li>
+    </ul><br /><br /><br /><br />
+
+    <center style="margin-bottom:20px;"><img src="assets/logo.gif"></center>
+    <div class="container">
+        <div style="max-width:800px;margin:auto;">
+            <center>
+                <canvas class="preview" width="77px" height="70px"></canvas><br />
+                <button onclick="updateCanvas()">Generate!</button> <button onclick="download()">Download
+                    Result</button>
+            </center>
+            <canvas id="right" width="77px" height="70px"></canvas>
+        </div>
+        <div>
+            <select onchange="changeSelection(this.value)">
+                <option value="#canonselection">Homestuck 1</option>
+                <option value="#beyondcanon">Beyond Canon</option>
+                <option value="#otherselection">Other Fandoms/Misc</option>
+            </select>
+        </div>
+        <div class="selection">
+            <p>Left Character</p>
+            <select id="leftselector" onchange="updateSources('#left_character', this.value)">
+
+            </select>
+
+            <p>Right Character</p>
+            <select id="rightselector" onchange="updateSources('#right_character', this.value)">
+
+            </select>
+
+            <p>Romance Symbol</p>
+            <select onchange="updateSources('#icon', this.value)">
+                <option value="assets/pixeling/heart.png">Matesprit (♥) Full</option>
+                <option value="assets/pixeling/spade.png">Kismesis (♠) Full</option>
+                <option value="assets/pixeling/diamond.png">Moirail (♦) Full</option>
+                <option value="assets/pixeling/diamondheart.png">Moirail (♦) Left, Matesprit (♥) Right</option>
+                <option value="assets/pixeling/heartdiamond.png">Matesprit (♥) Left, Moirail (♦) Right</option>
+                <option value="assets/pixeling/heartspade.png">Matesprit (♥) Left, Kismesis (♠) Right</option>
+                <option value="assets/pixeling/spadeheart.png">Kismesis (♠) Left, Matesprit (♥) Right</option>
+                <option value="assets/pixeling/diamondspade.png">Moirail (♦) Left, Kismesis (♠) Right</option>
+                <option value="assets/pixeling/spadediamond.png">Kismesis (♠) Left, Moirail (♦) Right</option>
+            </select>
+        </div>
+        <center><button onclick="randomize()">Random Selection</button></center>
+        <h1>Import Custom Sprites (experimental)</h1>
+        <details>
+            <summary>HOW TO IMPORT/UPLOAD FILES</summary>
+            <p>You will need a link to your image. Feel free to use a hosting service like <a
+                    href="https://filegarden.com/">File Garden</a>.</p>
+            <p>Once you upload your image, copy the link to it and put it in one of the input textboxes.</p>
+        </details>
+        <details>
+            <summary>How to format custom characters</summary>
+            <p>All character assets should face right. Both sides use the same set of images and do not have to be
+                flipped manually.</p>
+            <p>Each image is 70px in height, with the width being up to you. The character's feet should start on the
+                very bottom, and any excess space at the top should not be removed. Canvas does not allow you to change
+                the pivot of images that are inserted, so otherwise your character is just gonna float.</p>
+            <h3>Example character:</h3>
+            <img src="assets/pixeling/characters/john.png">
+        </details>
+        <details>
+            <summary>How to format custom romance symbols</summary>
+            <p>Custom romance images are the same size as the canvas (77x70, in pixels). Whatever goes in this image is
+                up to you.</p>
+            <p>Keep in mind the symbol is always kept on top of the canvas!</p>
+            <h3>Example romance symbol:</h3>
+            <img src="assets/pixeling/heart.png">
+        </details>
+        <br /><br />
+        <p>NOTE: Any selection will override your custom image. Add a space then undo it to refresh the sources!</p>
+        <div class="selection">
+
+            <p>Left Character</p>
+            <input type="text" onchange="updateSources('#left_character', this.value)"></input>
+            <p>Right Character</p>
+            <input type="text" onchange="updateSources('#right_character', this.value)"></input>
+            <p>Romance Symbol</p>
+            <input type="text" onchange="updateSources('#icon', this.value)"></input>
+        </div>
+        <center>
+            <p>Most sprites belong to Feastings, who originated the pixeling format.
+                <br />Site coded by Aster!
+            </p>
+        </center>
+    </div>
+    <div style="display:none;">
+        <img id="icon" src="assets/pixeling/heart.png">
+        <img id="left_character">
+        <img id="right_character">
+        <select id="canonselection">
+            <option value="assets/pixeling/characters/john.png">John (feastings)</option>
+            <option value="assets/pixeling/characters/john_gt.png">God Tier John (feastings)</option>
+            <option value="assets/pixeling/characters/rose.png">Rose (feastings)</option>
+            <option value="assets/pixeling/characters/rose_gt.png">God Tier Rose (feastings)</option>
+            <option value="assets/pixeling/characters/dave.png">Dave (feastings)</option>
+            <option value="assets/pixeling/characters/dave_gt.png">God Tier Dave (feastings)</option>
+            <option value="assets/pixeling/characters/jade.png">Jade (feastings)</option>
+            <option value="assets/pixeling/characters/jade_gt.png">God Tier Jade (feastings)</option>
+            <option value="assets/pixeling/characters/jane.png">Jane (feastings)</option>
+            <option value="assets/pixeling/characters/jane_gt.png">God Tier Jane (feastings, Aster)</option>
+            <option value="assets/pixeling/characters/jake.png">Jake (feastings)</option>
+            <option value="assets/pixeling/characters/jake_gt.png">God Tier Jake (feastings, Aster)</option>
+            <option value="assets/pixeling/characters/roxy.png">Roxy (feastings)</option>
+            <option value="assets/pixeling/characters/roxy_gt.png">God Tier Roxy (feastings, Aster)</option>
+            <option value="assets/pixeling/characters/dirk.png">Dirk (feastings)</option>
+            <option value="assets/pixeling/characters/dirk_gt.png">God Tier Dirk (feastings)</option>
+
+            <option value="assets/pixeling/characters/calliope.png">Calliope (feastings)</option>
+            <option value="assets/pixeling/characters/caliborn.png">Caliborn (feastings)</option>
+
+            <option value="assets/pixeling/characters/hal_glasses.png">Lil Hal Glasses (feastings, Aster)</option>
+            <option value="assets/pixeling/characters/hal_humanoid.png">Lil Hal Humanoid (feastings, Aster)</option>
+
+            <option value="assets/pixeling/characters/aradia.png">Aradia (feastings)</option>
+            <option value="assets/pixeling/characters/tavros.png">Tavros (feastings)</option>
+            <option value="assets/pixeling/characters/sollux.png">Sollux (feastings)</option>
+            <option value="assets/pixeling/characters/karkat.png">Karkat (feastings)</option>
+            <option value="assets/pixeling/characters/nepeta.png">Nepeta (feastings)</option>
+            <option value="assets/pixeling/characters/kanaya.png">Kanaya (feastings)</option>
+            <option value="assets/pixeling/characters/terezi.png">Terezi (feastings)</option>
+            <option value="assets/pixeling/characters/vriska.png">Vriska (feastings)</option>
+            <option value="assets/pixeling/characters/equius.png">Equius (feastings)</option>
+            <option value="assets/pixeling/characters/gamzee.png">Gamzee (feastings)</option>
+            <option value="assets/pixeling/characters/eridan.png">Eridan (feastings)</option>
+            <option value="assets/pixeling/characters/feferi.png">Feferi (feastings)</option>
+
+            <option value="assets/pixeling/characters/damara.png">Damara (feastings)</option>
+            <option value="assets/pixeling/characters/rufioh.png">Rufioh (feastings)</option>
+            <option value="assets/pixeling/characters/mituna.png">Mituna (feastings)</option>
+            <option value="assets/pixeling/characters/kankri.png">Kankri (feastings)</option>
+            <option value="assets/pixeling/characters/meulin.png">Meulin (feastings)</option>
+            <option value="assets/pixeling/characters/porrim.png">Porrim (feastings)</option>
+            <option value="assets/pixeling/characters/latula.png">Latula (feastings)</option>
+            <option value="assets/pixeling/characters/aranea.png">Aranea (feastings)</option>
+            <option value="assets/pixeling/characters/horuss.png">Horuss (feastings)</option>
+            <option value="assets/pixeling/characters/kurloz.png">Kurloz (feastings)</option>
+            <option value="assets/pixeling/characters/cronus.png">Cronus (feastings)</option>
+            <option value="assets/pixeling/characters/meenah.png">Meenah (feastings)</option>
+
+            <option value="assets/pixeling/characters/wv.png">Wayward Vagabond (feastings)</option>
+            <option value="assets/pixeling/characters/pm.png">Peregrine Mendicant (feastings)</option>
+            <option value="assets/pixeling/characters/ar.png">Aimless Renegade (feastings)</option>
+            <option value="assets/pixeling/characters/wq.png">Windswept Questant (feastings)</option>
+            <option value="assets/pixeling/characters/ss.png">Spades Slick (Aster)</option>
+            <option value="assets/pixeling/characters/dd.png">Diamonds Droog (Aster)</option>
+            <option value="assets/pixeling/characters/hb.png">Hearts Boxcars (Aster)</option>
+            <option value="assets/pixeling/characters/cd.png">Clubs Deuce (Aster)</option>
+            <option value="assets/pixeling/characters/die.png">Die (Aster)</option>
+            <option value="assets/pixeling/characters/crowbar.png">Crowbar (Aster)</option>
+            <option value="assets/pixeling/characters/snowman.png">Snowman (Aster)</option>
+            <option value="assets/pixeling/characters/scratch.png">Doc Scratch (Aster)</option>
+        </select>
+
+        <select id="otherselection">
+            <option value="assets/pixeling/characters/other/2d.png">Gorillaz ~ 2-D (Aster)</option>
+            <option value="assets/pixeling/characters/other/murdoc.png">Gorillaz ~ Murdoc Niccals (Aster)</option>
+        </select>
+        <select id="beyondcanon">
+            <option value="assets/pixeling/characters/postcanon/meat_rose.png">Rosebot (feastings, Aster)</option>
+            <option value="assets/pixeling/characters/postcanon/ult_dirk.png">Ultimate Dirk (feastings, Aster)</option>
+            <option value="assets/pixeling/characters/postcanon/ult_terezi.png">Terezi (Feastings, Aster)</option>
+            <option value="assets/pixeling/characters/postcanon/ult_vriska_helltier.png">Helltier Vriska (feastings, Aster)</option>
+            <option value="assets/pixeling/characters/postcanon/ult_vriska_casual.png">Casual Helltier Vriska (feastings, Aster)</option>
+        </select>
+    </div>
+    <div class="footer">
+        <div style="width:50%;padding-right: 10px;">
+            <p>The Homestuck Clubhouse 2025-2026</p>
+            <p style="font-size:xx-small">This is a fan site which has no affiliation with the Homestuck team. Homestuck as an intellectual property is owned by Andrew Hussie.</p></div>
+        <div style="width:25%;">
+            <h3 style="margin-bottom:5px;margin-top:20px;">Directories</h3>
+            <a href="/directories/fandom.html">Fandom</a><br/>
+            <a href="/directories/games.html">Games</a><br/>
+            <a href="/directories/resources.html">Resources</a><br/>
+            <a href="/directories/tools.html">Programs & Tools</a><br/>
+            <a href="/directories/fanfiction.html">Fanfiction</a><br/>
+        </div>
+        <div style="width:25%;">
+            <h3 style="margin-bottom:5px;margin-top:20px;">Originals</h3>
+            <a href="https://discord.gg/Qj54bxFy8n">HSCH Discord</a><br/>
+            <a href="/dollmaker/index.html">The TrollMaker</a><br/>
+            <a href="/shipixels/index.html">Shipixels</a><br/>
+        </div>
+    </div>
+</body>
+<script>
+
+    var main_c = document.querySelector(".preview");
+    var main_ctx = main_c.getContext("2d");
+
+    var right_c = document.querySelector("#right");
+    var right_ctx = right_c.getContext("2d");
+
+    function setup() {
+        right_ctx.translate(right_c.width, 0);
+        right_ctx.scale(-1, 1);
+
+        changeSelection("#canonselection");
+    }
+
+    function changeSelection(selector) {
+        var characterlist = document.querySelector(selector);
+        document.querySelector("#leftselector").innerHTML = characterlist.innerHTML;
+        document.querySelector("#rightselector").innerHTML = characterlist.innerHTML;
+        document.querySelector("#left_character").src = document.querySelector("#leftselector").value;
+        document.querySelector("#right_character").src = document.querySelector("#rightselector").value;
+    }
+
+    function updateSources(id, value) {
+        document.querySelector(id).src = value;
+    }
+
+    function updateCanvas() {
+        main_ctx.globalCompositeOperation = "source_over";
+        main_ctx.clearRect(0, 0, main_c.width, main_c.height);
+        right_ctx.clearRect(0, 0, right_c.width, right_c.height);
+
+        main_ctx.drawImage(document.querySelector("#icon"), 0, 0);
+        main_ctx.globalCompositeOperation = "destination-over";
+        main_ctx.drawImage(document.querySelector("#left_character"), 0, 0);
+
+        right_ctx.drawImage(document.querySelector("#right_character"), 0, 0);
+        main_ctx.drawImage(right_c, 0, 0);
+    }
+
+    function download() {
+        var link = document.createElement('a');
+        link.download = 'shipixels result.png';
+        link.href = main_c.toDataURL()
+        link.click();
+    }
+
+    function randomize() {
+        document.querySelectorAll(".selection select").forEach(element => {
+            element.value = element.options[Math.floor(Math.random() * element.options.length)].value;
+            element.onchange();
+        });
+    }
+
+    setup();
+
+</script>

@@ -1,0 +1,132 @@
+<head>
+    <title>Homestuck Games - LOHAC.xyz</title>
+
+</head>
+
+<style>
+</style>
+
+<body>
+    <div>
+        <center>
+        <h1 style="margin-top:20px;">Filter Tags</h1>
+
+        <select multiple class="filterselect" onchange="filterSelection();">
+            <option value=".option">Show All</option>
+            <option value=".game">Game</option>
+            <option value=".mod">Mod</option>
+            <option value=".vn">Visual Novel</option>
+            <option value=".idle">Idle Game</option>
+            <option value=".sburb">SBURB-like</option>
+            <option value=".rpg">RPG</option>
+            <option value=".other">Miscellaneous</option>
+            <option value=".selfhost">Available on LOHAC</option>
+            <option value=".webhost">Web Hosted</option>
+            <option value=".desktop">Desktop App</option>
+        </select>
+        </center>
+    </div>
+
+    <div id="resultscount"></div>
+
+    <div class="options">
+        <a href="http://www.farragofiction.com/DollSim/" class="option game webhost idle">
+            <div class="container">
+                <div class="padding scroll">
+                    <h2>WigglerSim</h2>
+                    <p style="margin:0;">FarragoFiction</p>
+                    <div class="tags">
+                        <p style="--accent-color:blue;">Standalone Game</p>
+                        <p style="--accent-color:orange;">Idle Game</p>
+                        <p style="--accent-color:teal;">Web Hosted</p>
+                    </div>
+                    <p>Raise wigglers, watch them get adopted from you, then repeat the process again. Each wiggler has its own randomly generated sprite which will eventually transform into a fully grown troll!</p>
+                </div>
+                <div class="previewimage" style="background-image: url(thumbnails/wigglersim.png)"></div>
+            </div>
+        </a>
+        <a href="https://hjtfir.itch.io/pesterquest-rewritten" class="option vn game webhost desktop">
+            <div class="container">
+                <div class="padding scroll">
+                    <h2>Pesterquest Rewritten</h2>
+                    <p style="margin:0;">EtchJetty (additional credits listed in game)</p>
+                    <div class="tags">
+                        <p style="--accent-color:blue;">Standalone Game</p>
+                        <p style="--accent-color:orange;">Visual Novel</p>
+                        <p style="--accent-color:teal;">Web Hosted</p>
+                        <p style="--accent-color:darkorange;">Desktop App</p>
+                    </div>
+                    <p>An ongoing pseudo-sequel to Pesterquest, being gradually updated with new chapters. An Act 1 demo is available on the web, with the rest being download-only.</p>
+                </div>
+                <div class="previewimage" style="background-image: url(thumbnails/pqrewritten.png)"></div>
+            </div>
+        </a>
+        <a href="https://store.steampowered.com/app/1610900/The_Genesis_Project/" class="option game sburb desktop">
+            <div class="container">
+                <div class="padding scroll">
+                    <h2>The Genesis Project</h2>
+                    <p style="margin:0;">Perfectly Generic Team</p>
+                    <div class="tags">
+                        <p style="--accent-color:blue;">Standalone Game</p>
+                        <p style="--accent-color:orange;">SBURB</p>
+                        <p style="--accent-color:darkorange;">Desktop App</p>
+                    </div>
+                    <p>The most in-depth SBURB recreation game out there. Make your own house and character, then control them in an isometric 3D environment not far from the original comic through the entry process and beyond! (It's a bit buggy, but I'm sure they're working on it.)</p>
+                </div>
+                <div class="previewimage" style="background-image: url(thumbnails/tgp.png)"></div>
+            </div>
+        </a>
+        <a href="https://pymxolbo.itch.io/vriska-lafufu-box" class="option other webhost desktop">
+            <div class="container">
+                <div class="padding scroll">
+                    <h2>Vriska Lafufu in a Cardboard Box</h2>
+                    <p style="margin:0;">pymxolbo</p>
+                    <div class="tags">
+                        <p style="--accent-color:blue;">Standalone Game</p>
+                        <p style="--accent-color:orange;">Miscellaneous</p>
+                        <p style="--accent-color:teal;">Web Hosted</p>
+                        <p style="--accent-color:darkorange;">Desktop App</p>
+                    </div>
+                    <p>A Kick-The-Buddy style game where you instead play with a Vriska Lafufu. This artistically ambitious title is a must play for Homestuck fans and non-fans alike, in my book. (/s)</p>
+                </div>
+                <div class="previewimage" style="background-image: url(thumbnails/vriskalafufu.gif)"></div>
+            </div>
+        </a>
+        <a href="https://mb.srb2.org/addons/doc-scratchs-skaian-speedsters.7244/" class="option mod other desktop">
+            <div class="container">
+                <div class="padding scroll">
+                    <h2>Doc Scratch's Skaian Speedsters</h2>
+                    <p style="margin:0;">Hydro-City-Zone (additional credits listed on page)</p>
+                    <div class="tags">
+                        <p style="--accent-color:red;">Mod</p>
+                        <p style="--accent-color:orange;">Miscellaneous</p>
+                        <p style="--accent-color:darkorange;">Desktop App</p>
+                    </div>
+                    <p>A SRB2 mod that adds a bunch of characters from Homestuck that are fully voiced. Yes, Doc Scratch is playable.</p>
+                </div>
+                <div class="previewimage" style="background-image: url(thumbnails/skaianspeedsters.png)"></div>
+            </div>
+        </a>
+    </div>
+    <div class="footer">
+        <div style="width:50%;padding-right: 10px;">
+            <p>The Homestuck Clubhouse 2025-2026</p>
+            <p style="font-size:xx-small">This is a fan site which has no affiliation with the Homestuck team. Homestuck as an intellectual property is owned by Andrew Hussie.</p></div>
+        <div style="width:25%;">
+            <h3 style="margin-bottom:5px;margin-top:20px;">Directories</h3>
+            <a href="/directories/fandom.html">Fandom</a><br/>
+            <a href="/directories/games.html">Games</a><br/>
+            <a href="/directories/resources.html">Resources</a><br/>
+            <a href="/directories/tools.html">Programs & Tools</a><br/>
+            <a href="/directories/fanfiction.html">Fanfiction</a><br/>
+        </div>
+        <div style="width:25%;">
+            <h3 style="margin-bottom:5px;margin-top:20px;">Originals</h3>
+            <a href="https://discord.gg/Qj54bxFy8n">HSCH Discord</a><br/>
+            <a href="/dollmaker/index.html">The TrollMaker</a><br/>
+            <a href="/shipixels/index.html">Shipixels</a><br/>
+        </div>
+    </div>
+</body>
+
+<script src="directory.js"></script>

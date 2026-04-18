@@ -1,0 +1,240 @@
+<head>
+    <title>The TrollMaker - LOHAC.xyz</title>
+    <link rel="stylesheet" href="/assets/styles/navigation.css">
+    <link rel="stylesheet" href="/assets/styles/dollmaker.css">
+</head>
+
+<body>
+    <nav>
+
+    </nav>
+    <img src="assets/trollmaker_banner.png" width="60%" style="display:block;margin:auto;margin-top:70px;"><br/>
+    <div class="container">
+        <p>NOTE: The doll may draw in the wrong order upon loading new assets (especially prone when using the Randomize features). Use the "Fix Doll" button to redraw the doll in the correct layer order!</p>
+        <div style="display:grid;grid-template-columns: 60% 40%;align-items:middle;">
+            <div style="padding:0px 20px;">
+                <center>
+                <canvas id="dollpreview" width="300" height="300" >
+                    Your browser does not support the HTML canvas tag.
+                </canvas>
+
+                <canvas id="coloring" width="300" height="300"></canvas>
+                <br/>
+                <button id="updater" onclick="refreshCanvas()">Fix Doll</button>
+                <button id="save">Save Link</button>
+                <button onclick="downloadDoll()">Save Image</button>
+                </center>
+                <h1>Preset Colors (optional)</h1>
+                <div style="display:grid;grid-template-columns: 50% 50%;align-items:center;">
+                    <p>Set Sign to Blood Color</p>
+                    <select onchange="updateColors(this.value, null, null)">
+                        <option value="#626262">Anon (default)</option>
+                        <option value="#a10000">Rust</option>
+                        <option value="#a25203">Bronze</option>
+                        <option value="#a1a100">Gold</option>
+                        <option value="#678900">Lime</option>
+                        <option value="#ff0000">Mutant/Candy Red</option>
+                        <option value="#416600">Olive</option>
+                        <option value="#008141">Jade</option>
+                        <option value="#008282">Teal</option>
+                        <option value="#004182">Cerulean</option>
+                        <option value="#0021cb">Indigo</option>
+                        <option value="#440a7f">Purple</option>
+                        <option value="#6a006a">Violet</option>
+                        <option value="#b11262">Fuchsia</option>
+                    </select>
+                    <p>Set Accents to Blood Color</p>
+                    <select onchange="updateColors(null, this.value, null)">
+                        <option value="#626262">Anon (default)</option>
+                        <option value="#a10000">Rust</option>
+                        <option value="#a25203">Bronze</option>
+                        <option value="#a1a100">Gold</option>
+                        <option value="#678900">Lime</option>
+                        <option value="#ff0000">Mutant/Candy Red</option>
+                        <option value="#416600">Olive</option>
+                        <option value="#008141">Jade</option>
+                        <option value="#008282">Teal</option>
+                        <option value="#004182">Cerulean</option>
+                        <option value="#0021cb">Indigo</option>
+                        <option value="#440a7f">Purple</option>
+                        <option value="#6a006a">Violet</option>
+                        <option value="#b11262">Fuchsia</option>
+                    </select>
+                    
+                    <p>Set Shirt to Blood Color</p>
+                    <select onchange="updateColors(null, null, this.value)">
+                        <option value="#111111">Default</option>
+                        <option value="#626262">Anon</option>
+                        <option value="#a10000">Rust</option>
+                        <option value="#a25203">Bronze</option>
+                        <option value="#a1a100">Gold</option>
+                        <option value="#678900">Lime</option>
+                        <option value="#ff0000">Mutant/Candy Red</option>
+                        <option value="#416600">Olive</option>
+                        <option value="#008141">Jade</option>
+                        <option value="#008282">Teal</option>
+                        <option value="#004182">Cerulean</option>
+                        <option value="#0021cb">Indigo</option>
+                        <option value="#440a7f">Purple</option>
+                        <option value="#6a006a">Violet</option>
+                        <option value="#b11262">Fuchsia</option>
+                    </select>
+
+                    <p>Set Hair Color</p>
+                    <select onchange="updateHairColor(this.value)">
+                        <option value="#111111">Black (default)</option>
+                        <option value="#ffffff">White</option>
+                    </select>
+                    <p>Set Skin Color</p>
+                    <select onchange="updateSkinColor(this.value)">
+                        <option value="#c4c4c4">Grey (default)</option>
+                        <option value="#ffffff">White</option>
+                    </select>
+                </div>
+                <h1>Credits</h1>
+                <table class="credits">
+                    <tr><td>Creator and Main Artist/Programmer</td><td>Aster</td></tr>
+                    <tr><td>Randomize buttons and Save/Load code</td><td>fenz</td></tr>
+                </table>
+                <h4>Individual part credits are in the names of the respective parts.<br/>All unlabelled parts are made by AsterTheDisaster!</h4>
+                <h1>Contribute to the Troll Maker</h1>
+                <p>Have any bug reports, part suggestions, or would like to submit your own drawn assets? <a href="https://discord.gg/Qj54bxFy8n">Join the HSCH Discord</a> and send your contributions to me or in the respective channel!</p>
+            </div>
+            <div>
+                <center>
+                <button onclick="randomParts()">Randomize Parts</button>
+                <button onclick="randomColors()">Randomize Colors</button>
+                <button onclick="randomAll()">Randomize All!</button>
+                </center>
+                <br/>
+                <center>
+                <button onclick="toggleColorPicker()">Toggle Color Picker (experimental, may break with imperfect hex codes)</button>
+                </center>
+                <br/>
+                <div class="selection">
+                </div>
+                </div>
+            </div>
+            </div>
+            </div>
+        </div>
+
+        <div id="disposal"></div>
+
+        <img class="sourceimg" src="" onload="cache(this, 0, document.querySelector('#hair_color'))">
+        <img class="sourceimg" src="" onload="cache(this, 1, document.querySelector('#hair_color'))">
+        <img class="sourceimg" src="" onload="cache(this, 2, document.querySelector('#hair_color'))">
+        <img class="sourceimg" src="" onload="cache(this, 3, document.querySelector('#hair_color'))">
+        <img class="sourceimg" src="" onload="cache(this, 4, document.querySelector('#acc_cape_color'))">
+        <img class="sourceimg" src="" onload="cache(this, 5, document.querySelector('#skin_color'))">
+        <img class="sourceimg" src="" onload="cache(this, 6, document.querySelector('#body_socks_color'))">
+        <img class="sourceimg" src="" onload="cache(this, 7, document.querySelector('#body_shoes_color'))">
+        <img class="sourceimg" src="" onload="cache(this, 8, document.querySelector('#body_pants_color'))">
+        <img class="sourceimg" src="" onload="cache(this, 9, document.querySelector('#body_shirt_color'))">
+        <img class="sourceimg" src="" onload=" cache(this, 10, document.querySelector('#acc_belt_color'))">
+        <img class="sourceimg" src="" onload=" cache(this, 11, document.querySelector('#body_jacket_color'))">
+        <img class="sourceimg" src="" onload="cache(this, 12, document.querySelector('#body_sign_color'))">
+        <img class="sourceimg" src="" onload="cache(this, 13, document.querySelector('#acc_scarf_color'))">
+        <img class="sourceimg" src="" onload="cache(this, 14)">
+        <img class="sourceimg" src="" onload="cache(this, 15)">
+        <img class="sourceimg" src="" onload="cache(this, 16, document.querySelector('#skin_color'))">
+        <img class="sourceimg" src="" onload=" cache(this, 17, document.querySelector('#skin_color'))">
+        <img class="sourceimg" src="" onload=" cache(this, 18)">
+        <img class="sourceimg" src="" onload=" cache(this, 19)">
+        <img class="sourceimg" src="" onload=" cache(this, 20)">
+        <img class="sourceimg" src="" onload=" cache(this, 21)">
+        <img class="sourceimg" src="" onload=" cache(this, 22)">
+        <img class="sourceimg" src="" onload="cache(this, 23)">
+        <img class="sourceimg" src="" onload="cache(this, 24, document.querySelector('#skin_color'))">
+        <img class="sourceimg" src="" onload=" cache(this, 25, document.querySelector('#acc_glasses_color'))">
+        <img class="sourceimg" src="" onload="cache(this, 26, document.querySelector('#hair_color'))">
+        <img class="sourceimg" src="" onload="cache(this, 27, document.querySelector('#hair_color'))">
+        <img class="sourceimg" src="" onload="cache(this, 28, document.querySelector('#acc_hat_color'))">
+        <img class="sourceimg" src="" onload="cache(this, 29)">
+        <img class="sourceimg" src="" onload="cache(this, 30)">
+    </div>
+
+    <footer>
+        
+    </footer>
+</body>
+
+<script src="/assets/scripts/setup.js"></script>
+<script>
+
+    async function loadParts(target) {
+        const sharedHeadHtml = await fetch("parts/shared_head.html").then(e => e.text());
+        const sharedBodyHtml = await fetch("parts/shared_body.html").then(e => e.text());
+        const personalHtml = await fetch("parts/troll.html").then(e => e.text());
+
+        target.innerHTML = sharedHeadHtml + sharedBodyHtml + personalHtml;
+        refreshCanvas();
+    }
+
+    loadParts(document.querySelector(".selection"));
+
+    var cached = [];
+
+    var cacheLength = 31;
+
+    var colorpickerBuffer = true;
+
+    var actionlog = document.getElementById("actionlog");
+
+    var c = document.getElementById("dollpreview");
+    var ctx = c.getContext("2d");
+
+
+    function refreshCanvas() {
+        cached = [];
+
+        var cycle = 0;
+
+        ctx.clearRect(0, 0, c.width, c.height);
+
+        const layers = [
+            document.querySelector('#hair_ponytail_l'),
+            document.querySelector('#hair_ponytail_r'),
+            document.querySelector('#hair_back_bottom'),
+            document.querySelector('#hair_back_top'),
+            document.querySelector("#acc_cape"),
+            document.querySelector('#body_legs'),
+            document.querySelector('#body_socks'),
+            document.querySelector('#body_shoes'),
+            document.querySelector('#body_pants'),
+            document.querySelector('#body_shirt'),
+            document.querySelector('#acc_belt'),
+            document.querySelector('#body_jacket'),
+            document.querySelector("#body_sign"),
+            document.querySelector("#acc_scarf"),
+            document.querySelector('#horn_right_side'),
+            document.querySelector('#horn_right_main'),
+            document.querySelector('#head_fin_r'),
+            document.querySelector('#head_color'),
+            document.querySelector('#face_eyebrow_l'),
+            document.querySelector('#face_eyebrow_r'),
+            document.querySelector('#face_eye_l'),
+            document.querySelector('#face_eye_r'),
+            document.querySelector('#face_mouth'),
+            document.querySelector('#head_outline'),
+            document.querySelector('#head_fin_l'),
+            document.querySelector("#acc_glasses"),
+            document.querySelector('#hair_front_top'),
+            document.querySelector('#hair_front_side'),
+            document.querySelector("#acc_hat"),
+            document.querySelector('#horn_left_side'),
+            document.querySelector('#horn_left_main')
+        ]
+        // REMEMBER: shows backwards. so last elements should be the front
+
+        layers.forEach(element => {
+            document.getElementsByClassName("sourceimg")[cycle].src = element.value;
+            cycle += 1;
+        });
+        cycle = 0;
+    }
+</script>
+<script src="js/drawing.js"></script>
+<script src="js/colorpresets_troll.js"></script>
+<script src="js/savelink.js"></script>
+<script src="js/other.js"></script>

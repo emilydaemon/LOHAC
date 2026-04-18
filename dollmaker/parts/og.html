@@ -1,0 +1,546 @@
+<p>
+                        Back Hair Left Ponytail
+                    </p>
+                    <select id="hair_ponytail_l" onchange="refreshCanvas()">
+                        <option value="assets/troll/blank.png">None</option>
+                        <option value="assets/troll/hair_ponytail_l/0001.png">Short Side Ponytail</option>
+                        <option value="assets/troll/hair_ponytail_l/0002.png">High Bun</option>
+                        <option value="assets/troll/hair_ponytail_l/0003.png">Long Side Ponytail</option>
+                    </select>
+                    
+                    <p>
+                        Back Hair Right Ponytail
+                    </p>
+                    <select id="hair_ponytail_r" onchange="refreshCanvas()">
+                        <option value="assets/troll/blank.png">None</option>
+                        <option value="assets/troll/hair_ponytail_r/0001.png">Short Side Ponytail</option>
+                        <option value="assets/troll/hair_ponytail_r/0002.png">High Bun</option>
+                        <option value="assets/troll/hair_ponytail_r/0003.png">Long Side Ponytail</option>
+                    </select>
+
+                    <p>
+                        Back Hair Bottom
+                    </p>
+                    <select id="hair_back_bottom" onchange="refreshCanvas()">
+                        <option value="assets/troll/hair_back_bot/0001.png">Long Straight</option>
+                        <option value="assets/troll/hair_back_bot/0003.png">Long Messy</option>
+                        <option value="assets/troll/hair_back_bot/0005.png">Long Wolfcut</option>
+                        <option value="assets/troll/hair_back_bot/0004.png">Short Bob</option>
+                        <option value="assets/troll/hair_back_bot/0006.png">Short Pixie</option>
+                        <option value="assets/troll/hair_back_bot/0009.png">Short Messy Large Volume</option>
+                        <option value="assets/troll/hair_back_bot/0010.png">Short Curly</option>
+                        <option value="assets/troll/hair_back_bot/0002.png">Medium Straight</option>
+                        <option value="assets/troll/hair_back_bot/0007.png">Medium Messy</option>
+                        <option value="assets/troll/hair_back_bot/0008.png">Medium Curled Outwards</option>
+                        <option value="assets/troll/hair_back_bot/0011.png">Medium Curly</option>
+                        <option value="assets/troll/hair_back_bot/0012.png">Short Spiky</option>
+                        <option value="assets/troll/hair_back_bot/0013.png">Short Spiky Curled Upwards</option>
+                    </select>
+                    
+
+                    <p>
+                        Back Hair Top
+                    </p>
+                    <select id="hair_back_top" onchange="refreshCanvas()">
+                        <option value="assets/troll/hair_back_top/0001.png">Straight</option>
+                        <option value="assets/troll/hair_back_top/0002.png">Messy Split</option>
+                        <option value="assets/troll/hair_back_top/0003.png">Spiky Top</option>
+                        <option value="assets/troll/hair_back_top/0004.png">Side Split</option>
+                        <option value="assets/troll/hair_back_top/0005.png">Spiky Large Volume</option>
+                        <option value="assets/troll/hair_back_top/0007.png">Spiky Bottom</option>
+                        <option value="assets/troll/hair_back_top/0006.png">Curly</option>
+                    </select>
+
+                    <p>
+                        Front Hair Top
+                    </p>
+                    <select id="hair_front_top" onchange="refreshCanvas()">
+                        <option value="assets/troll/hair_front_top/0001.png">Middle Split</option>
+                        <option value="assets/troll/hair_front_top/0007.png">Side Split</option>
+                        <option value="assets/troll/hair_front_top/0003.png">Half Bangs</option>
+                        <option value="assets/troll/hair_front_top/0004.png">Straight Bangs</option>
+                        <option value="assets/troll/hair_front_top/0006.png">Hime Bangs</option>
+                        <option value="assets/troll/hair_front_top/0005.png">Long Side Part</option>
+                        <option value="assets/troll/hair_front_top/0002.png">Spiky</option>
+                        <option value="assets/troll/hair_front_top/0008.png">Straight Covering Eye</option>
+                        <option value="assets/troll/hair_front_top/0009.png">Straight Split Bangs</option>
+                        <option value="assets/troll/hair_front_top/0010.png">Curly Covering Eye</option>
+                        <option value="assets/troll/hair_front_top/0011.png">Curly Split Bangs</option>
+                        
+                    </select>
+                    
+                    <p>
+                        Front Hair Side
+                    </p>
+                    <select id="hair_front_side" onchange="refreshCanvas()">
+                        <option value="assets/troll/blank.png">None</option>
+                        <option value="assets/troll/hair_front_side/0001.png">Short Curled Inwards</option>
+                        <option value="assets/troll/hair_front_side/0009.png">Shaved Off</option>
+                        <option value="assets/troll/hair_front_side/0002.png">Medium Straight</option>
+                        <option value="assets/troll/hair_front_side/0004.png">Medium Curled Outwards</option>
+                        <option value="assets/troll/hair_front_side/0005.png">Medium Curled Inwards</option>
+                        <option value="assets/troll/hair_front_side/0008.png">Medium Fluffy</option>
+                         <option value="assets/troll/hair_front_side/0011.png">Medium Curly</option>
+                        <option value="assets/troll/hair_front_side/0003.png">Long Curled Outwards</option>
+                        <option value="assets/troll/hair_front_side/0006.png">Long Curled Inwards</option>
+                        <option value="assets/troll/hair_front_side/0007.png">Long Fluffy</option>
+                        <option value="assets/troll/hair_front_side/0010.png">Long Curly</option>
+                    </select>
+
+                    <p>Hair Color</p>
+                    <input type="color" style="height:100%;" id="hair_color" value="#111111" onchange="refreshCanvas()"/>
+                    
+
+                    <p>
+                        Head Accessory
+                    </p>
+                    <div>  
+                        <select id="acc_hat" onchange="refreshCanvas()">
+                            <option value="assets/troll/blank.png">None</option>
+                            <option value="assets/troll/accessory_head/0001.png">Small Top Hat</option>
+                            <option value="assets/troll/accessory_head/0002.png">Headband</option>
+                            <option value="assets/troll/accessory_head/0003.png">Beanie</option>
+                            <option value="assets/troll/accessory_head/0004.png">Cat Hood</option>
+                            <option value="assets/troll/accessory_head/0005.png">Frontwards Cap</option>
+                            <option value="assets/troll/accessory_head/0006.png">Backwards Cap</option>
+                            <option value="assets/troll/accessory_head/0007.png">Hood - Basic</option>
+                            <option value="assets/troll/accessory_head/0008.png">Hood - Pointed Front</option>
+                            <option value="assets/troll/accessory_head/0009.png">Hood - Covering Eyes</option>
+                        </select><br/>
+                        <input type="color" id="acc_hat_color" value="#626262" onchange="refreshCanvas()"/>
+                    </div>
+
+                    
+
+                    <p>
+                        Back Accessory
+                    </p>
+                    <div>
+                        <select id="acc_cape" onchange="refreshCanvas()">
+                            <option value="assets/troll/blank.png">None</option>
+                            <option value="assets/troll/accessory_back/0006.png">Basic Cape</option>
+                            <option value="assets/troll/accessory_back/0001.png">Cape with Long Collar</option>
+                            <option value="assets/troll/accessory_back/0002.png">Cat Tail Raised</option>
+                            <option value="assets/troll/accessory_back/0003.png">Cat Tail Lowered</option>
+                            <option value="assets/troll/accessory_back/0004.png">Dog Tail</option>
+                            <option value="assets/troll/accessory_back/0005.png">Bunny Tail</option>
+                        </select><br/>
+                        <input type="color" id="acc_cape_color" value="#626262" onchange="refreshCanvas()"/><br/>
+                    </div>
+                    
+
+                    <p>
+                        Legs
+                    </p>
+                    <select id="body_legs" onchange="refreshCanvas()">
+                        <option value="assets/troll/legs/0001.png">Default</option>
+                    </select>
+
+                    <p>
+                        Socks
+                    </p>
+                    <div>
+                        <select id="body_socks" onchange="refreshCanvas()">
+                            <option value="assets/troll/socks/0001.png">Basic Thigh Highs</option>
+                            <option value="assets/troll/socks/0003.png">Striped Thigh Highs</option>
+                            <option value="assets/troll/socks/0002.png">Basic Ankle Highs</option>
+                        </select>
+                        <input type="color" id="body_socks_color" value="#ffffff" onchange="refreshCanvas()"/><br/>
+                    </div>
+
+                    <p>
+                        Shoes
+                    </p>
+                    <div>
+                        <select id="body_shoes" onchange="refreshCanvas()">
+                            <option value="assets/troll/blank.png">None</option>
+                            <option value="assets/troll/shoes/0001.png">Sneakers</option>
+                            <option value="assets/troll/shoes/0003.png">Boots</option>
+                            <option value="assets/troll/shoes/0002.png">Ballet Tops</option>
+                            <option value="assets/troll/shoes/0004.png">Slides</option>
+                            <option value="assets/troll/shoes/0005.png">Flip Flops</option>
+                        </select>
+                        <input type="color" id="body_shoes_color" value="#626262" onchange="refreshCanvas()"/><br/>
+                    </div>
+                    
+
+                    <p>
+                        Legwear/Bottoms
+                    </p>
+                    
+                    <div>
+                        <select id="body_pants" onchange="refreshCanvas()">
+                            <option value="assets/troll/pants/0001.png">Baggy Sweatpants</option>
+                            <option value="assets/troll/pants/0002.png">Basic Short Skirt</option>
+                            <option value="assets/troll/pants/0003.png">Long Skirt</option>
+                            <option value="assets/troll/pants/0004.png">Basic Shorts</option>
+                            <option value="assets/troll/pants/0005.png">Cargo Shorts</option>
+                            <option value="assets/troll/pants/0006.png">Cuffed Pants</option>
+                            <option value="assets/troll/pants/0007.png">Cargo Pants</option>
+                        </select><br/>
+                        <input type="color" id="body_pants_color" value="#626262" onchange="refreshCanvas()"/><br/>
+                    </div>
+                    
+
+                    <p>
+                        Shirt/Torso
+                    </p>
+                    <div>
+                        <select id="body_shirt" onchange="refreshCanvas()">
+                            <option value="assets/troll/shirt/0001.png">Basic</option>
+                            <option value="assets/troll/shirt/0002.png">Polka Dotted</option>
+                            <option value="assets/troll/shirt/0003.png">Striped</option>
+                            <option value="assets/troll/shirt/0004.png">Tartan</option>
+                            <option value="assets/troll/shirt/0005.png">Argyle</option>
+                        </select><br/>
+                        <input type="color" id="body_shirt_color" value="#111111" onchange="refreshCanvas()"/><br/>
+                    </div>
+                    
+
+                    <p>
+                        Jacket/Outerwear
+                    </p>
+                    <div>
+                        <select id="body_jacket" onchange="refreshCanvas()">
+                            <option value="assets/troll/blank.png">None</option>
+                            <option value="assets/troll/jacket/0001.png">Basic</option>
+                            <option value="assets/troll/jacket/0002.png">Labcoat</option>
+                            <option value="assets/troll/jacket/0003.png">Fancy Coat</option>
+                            <option value="assets/troll/jacket/0004.png">Waistcoat</option>
+                            <option value="assets/troll/jacket/0005.png">Sweater Vest</option>
+                            <option value="assets/troll/jacket/0006.png">Open Zipup Hoodie</option>
+                            <option value="assets/troll/jacket/0006_1.png">Open Zipup Hoodie (No Hood)</option>
+                            <option value="assets/troll/jacket/0007.png">Full Hoodie</option>
+                            <option value="assets/troll/jacket/0007_1.png">Full Hoodie (No Hood)</option>
+                        </select><br/>
+                        <input type="color" id="body_jacket_color" value="#626262" onchange="refreshCanvas()"/>
+                    </div>
+
+                    <p>
+                        Sign
+                    </p>
+                    <div>
+                        <select id="body_sign" onchange="refreshCanvas()">
+                            <option value="assets/troll/blank.png">None</option>
+                            <option value="assets/troll/symbol/0002.png">Aries</option>
+                            <option value="assets/troll/symbol/0013.png">Arsces</option>
+                            <option value="assets/troll/symbol/0014.png">Arrius</option>
+                            <option value="assets/troll/symbol/0015.png">Ariborn</option>
+                            <option value="assets/troll/symbol/0016.png">Arittarius</option>
+                            <option value="assets/troll/symbol/0017.png">Arpia</option>
+                            <option value="assets/troll/symbol/0018.png">Arza</option>
+                            <option value="assets/troll/symbol/0019.png">Arga</option>
+                            <option value="assets/troll/symbol/0020.png">Aro</option>
+                            <option value="assets/troll/symbol/0021.png">Arcen</option>
+                            <option value="assets/troll/symbol/0022.png">Armini</option>
+                            <option value="assets/troll/symbol/0023.png">Arun</option>
+                            <option value="assets/troll/symbol/0024.png">Arist</option>
+                            <option value="assets/troll/symbol/0025.png">Arsci</option>
+                            <option value="assets/troll/symbol/0026.png">Arnius</option>
+                            <option value="assets/troll/symbol/0027.png">Aricorn</option>
+                            <option value="assets/troll/symbol/0028.png">Arittanius</option>
+                            <option value="assets/troll/symbol/0029.png">Arpio</option>
+                            <option value="assets/troll/symbol/0030.png">Arra</option>
+                            <option value="assets/troll/symbol/0031.png">Argo</option>
+                            <option value="assets/troll/symbol/0032.png">Arlo</option>
+                            <option value="assets/troll/symbol/0033.png">Arcer</option>
+                            <option value="assets/troll/symbol/0034.png">Armino</option>
+                            <option value="assets/troll/symbol/0035.png">Arus</option>
+                            <option value="assets/troll/symbol/0003.png">Taurus</option>
+                            <option value="assets/troll/symbol/0004.png">Gemini</option>
+                            <option value="assets/troll/symbol/0001.png">Cancer</option>
+                            <option value="assets/troll/symbol/0005.png">Leo</option>
+                            <option value="assets/troll/symbol/0006.png">Virgo</option>
+                            <option value="assets/troll/symbol/0007.png">Libra</option>
+                            <option value="assets/troll/symbol/0008.png">Scorpio</option>
+                            <option value="assets/troll/symbol/0009.png">Sagittarius</option>
+                            <option value="assets/troll/symbol/0010.png">Capricorn</option>
+                            <option value="assets/troll/symbol/0011.png">Aquarius</option>
+                            <option value="assets/troll/symbol/0012.png">Pisces</option>
+                        </select><br/>
+                        <input type="color" id="body_sign_color" value="#626262" onchange="refreshCanvas()"/>
+                    </div>
+                    <p>
+                        Waist Accessory
+                    </p>
+                    <div>
+                        <select id="acc_belt" onchange="refreshCanvas()">
+                            <option value="assets/troll/blank.png">None</option>
+                            <option value="assets/troll/accessory_waist/0001.png">Jacket Tied Around Waist</option>
+                            <option value="assets/troll/accessory_waist/0002.png">Basic Belt</option>
+                            <option value="assets/troll/accessory_waist/0003.png">Belt with Large Round Buckle</option>
+                        </select><br/>
+                        <input type="color" id="acc_belt_color" value="#626262" onchange="refreshCanvas()"/>
+                    </div>
+                    <p>
+                        Neck Accessory
+                    </p>
+                    <div>
+                        <select id="acc_scarf" onchange="refreshCanvas()">
+                            <option value="assets/troll/blank.png">None</option>
+                            <option value="assets/troll/accessory_neck/0001.png">Scarf Plain</option>
+                            <option value="assets/troll/accessory_neck/0002.png">Scarf Striped</option>
+                            <option value="assets/troll/accessory_neck/0003.png">Necktie</option>
+                            <option value="assets/troll/accessory_neck/0004.png">Tied Scarf</option>
+                            <option value="assets/troll/accessory_neck/0005.png">Shirt Collar - Basic</option>
+                            <option value="assets/troll/accessory_neck/0006.png">Shirt Collar - Polka Dotted</option>
+                            <option value="assets/troll/accessory_neck/0007.png">Shirt Collar - Striped</option>
+                            <option value="assets/troll/accessory_neck/0008.png">Shirt Collar - Tartan</option>
+                            <option value="assets/troll/accessory_neck/0009.png">Shirt Collar - Argyle</option>
+                        </select><br/>
+                        <input type="color" id="acc_scarf_color" value="#626262" onchange="refreshCanvas()"/>
+                    </div>
+                    
+                    <p>
+                        Right Side Horn
+                    </p>
+                    <select id="horn_right_side" onchange="refreshCanvas()">
+                        <option value="assets/troll/blank.png">None</option>
+                        <option value="assets/troll/horn_r_s/0001.png">Nubby</option>
+                        <option value="assets/troll/horn_r_s/0002.png">Sharp</option>
+                    </select>
+                    
+                    <p>
+                        Right Main Horn
+                    </p>
+                    <select id="horn_right_main" onchange="refreshCanvas()">
+                        <option value="assets/troll/horn_r_b/0001.png">Nubby</option>
+                        <option value="assets/troll/horn_r_b/0002.png">Sharp</option>
+                        <option value="assets/troll/horn_r_b/0003.png">Half Arrow</option>
+                        <option value="assets/troll/horn_r_b/0004.png">Scorpion</option>
+                        <option value="assets/troll/horn_r_b/0005.png">Conic</option>
+                        <option value="assets/troll/horn_r_b/0006.png">Ram Small</option>
+                        <option value="assets/troll/horn_r_b/0007.png">Ram Large</option>
+                        <option value="assets/troll/horn_r_b/0008.png">Conjoined</option>
+                        <option value="assets/troll/horn_r_b/0009.png">Wavy Sharp</option>
+                        <option value="assets/troll/horn_r_b/0010.png">Cat Ear-Like</option>
+                        <option value="assets/troll/horn_r_b/0011.png">Broken Thick</option>
+                        <option value="assets/troll/horn_r_b/0012.png">Arrow Thick</option>
+                        <option value="assets/troll/horn_r_b/0013.png">Arrow Thin</option>
+                        <option value="assets/troll/horn_r_b/0014.png">Curved Outwards</option>
+                        <option value="assets/troll/horn_r_b/0015.png">Bull Large</option>
+                        <option value="assets/troll/horn_r_b/0016.png">Sharp Bulky</option>
+                        <option value="assets/troll/horn_r_b/0017.png">Antlers</option>
+                        <option value="assets/troll/horn_r_b/0018.png">T Shaped</option>
+                        <option value="assets/troll/horn_r_b/0019.png">Long Facing Outwards</option>
+                        <option value="assets/troll/horn_r_b/0020.png">Long Facing Inwards</option>
+                        <option value="assets/troll/horn_r_b/0021.png">Wavy Curved</option>
+                        <option value="assets/troll/horn_r_b/0022.png">Curling Inwards</option>
+                        <option value="assets/troll/horn_r_b/0023.png">Dog Ear-Like</option>
+                        <option value="assets/troll/horn_r_b/0024.png">Bunny Ear-Like</option>
+                    </select>
+                    <p>
+                        Left Side Horn
+                    </p>
+                    <select id="horn_left_side" onchange="refreshCanvas()">
+                        <option value="assets/troll/blank.png">None</option>
+                        <option value="assets/troll/horn_l_s/0001.png">Nubby</option>
+                        <option value="assets/troll/horn_l_s/0002.png">Sharp</option>
+                    </select>
+                    <p>
+                        Left Main Horn
+                    </p>
+                        <select id="horn_left_main" onchange="refreshCanvas()">
+                            <option value="assets/troll/horn_l_b/0001.png">Nubby</option>
+                            <option value="assets/troll/horn_l_b/0002.png">Sharp</option>
+                            <option value="assets/troll/horn_l_b/0003.png">Half Arrow</option>
+                            <option value="assets/troll/horn_l_b/0004.png">Scorpion</option>
+                            <option value="assets/troll/horn_l_b/0005.png">Conic</option>
+                            <option value="assets/troll/horn_l_b/0006.png">Ram Small</option>
+                            <option value="assets/troll/horn_l_b/0007.png">Ram Large</option>
+                            <option value="assets/troll/horn_l_b/0008.png">Conjoined</option>
+                            <option value="assets/troll/horn_l_b/0009.png">Wavy</option>
+                            <option value="assets/troll/horn_l_b/0010.png">Cat Ear-Like</option>
+                            <option value="assets/troll/horn_l_b/0011.png">Broken Thick</option>
+                            <option value="assets/troll/horn_l_b/0012.png">Arrow Thick</option>
+                            <option value="assets/troll/horn_l_b/0013.png">Arrow Thin</option>
+                            <option value="assets/troll/horn_l_b/0014.png">Curved Outwards</option>
+                            <option value="assets/troll/horn_l_b/0015.png">Bull Large</option>
+                            <option value="assets/troll/horn_l_b/0016.png">Sharp Bulky</option>
+                            <option value="assets/troll/horn_l_b/0017.png">Antlers</option>
+                            <option value="assets/troll/horn_l_b/0018.png">T Shaped</option>
+                            <option value="assets/troll/horn_l_b/0019.png">Long Facing Outwards</option>
+                            <option value="assets/troll/horn_l_b/0020.png">Long Facing Inwards</option>
+                            <option value="assets/troll/horn_l_b/0021.png">Wavy Curved</option>
+                            <option value="assets/troll/horn_l_b/0022.png">Curling Inwards</option>
+                            <option value="assets/troll/horn_l_b/0023.png">Dog Ear-Like</option>
+                            <option value="assets/troll/horn_l_b/0024.png">Bunny Ear-Like</option>
+                        </select>
+                    <p>
+                        Face Paint
+                    </p>
+                    <select id="head_color" onchange="refreshCanvas()">
+                        <option value="assets/troll/head_color/0001.png">None</option>
+                        <option value="assets/troll/head_color/0002.png">Gamzee</option>
+                        <option value="assets/troll/head_color/0003.png">Z</option>
+                        <option value="assets/troll/head_color/0004.png">Mizzlebip</option>
+                    </select>
+                    <p>
+                        Head Outline
+                    </p>
+                    <select id="head_outline" onchange="refreshCanvas()">
+                        <option value="assets/troll/head_outline.png">Default</option>
+                    </select>
+                    <p>
+                        Left Fin
+                    </p>
+                    <select id="head_fin_l" onchange="refreshCanvas()">
+                        <option value="assets/troll/blank.png">None</option>
+                        <option value="assets/troll/fin_l/0001.png">Average</option>
+                        <option value="assets/troll/fin_l/0002.png">Large</option>
+                        <option value="assets/troll/fin_l/0003.png">Extra Large</option>
+                    </select>
+                    
+                    <p>
+                        Right Fin
+                    </p>
+                    <select id="head_fin_r" onchange="refreshCanvas()">
+                        <option value="assets/troll/blank.png">None</option>
+                        <option value="assets/troll/fin_r/0001.png">Average</option>
+                        <option value="assets/troll/fin_r/0002.png">Large</option>
+                        <option value="assets/troll/fin_r/0003.png">Extra Large</option>
+                    </select>
+
+
+                    <p>
+                        Left Eyebrow
+                    </p>
+                    <select id="face_eyebrow_l" onchange="refreshCanvas()">
+                        <option value="assets/troll/eyebrow_l/0001.png">Neutral Medium</option>
+                        <option value="assets/troll/blank.png">None</option>
+                        <option value="assets/troll/eyebrow_l/0002.png">Sad Medium</option>
+                        <option value="assets/troll/eyebrow_l/0003.png">Angry Medium</option>
+                        <option value="assets/troll/eyebrow_l/0004.png">Surprised Medium</option>
+                        <option value="assets/troll/eyebrow_l/0005.png">Neutral Thick</option>
+                        <option value="assets/troll/eyebrow_l/0006.png">Sad Thick</option>
+                        <option value="assets/troll/eyebrow_l/0007.png">Angry Thick</option>
+                    </select>
+
+                    <p>
+                        Right Eyebrow
+                    </p>
+                    <select id="face_eyebrow_r" onchange="refreshCanvas()">
+                        <option value="assets/troll/eyebrow_r/0001.png">Neutral Medium</option>
+                        <option value="assets/troll/blank.png">None</option>
+                        <option value="assets/troll/eyebrow_r/0002.png">Sad Medium</option>
+                        <option value="assets/troll/eyebrow_r/0003.png">Angry Medium</option>
+                        <option value="assets/troll/eyebrow_r/0004.png">Surprised Medium</option>
+                        <option value="assets/troll/eyebrow_r/0005.png">Neutral Thick</option>
+                        <option value="assets/troll/eyebrow_r/0006.png">Sad Thick</option>
+                        <option value="assets/troll/eyebrow_r/0007.png">Angry Thick</option>
+                    </select>
+                    
+
+                    <p>
+                        Left Eye
+                    </p>
+                    <select id="face_eye_l" onchange="refreshCanvas()">
+                        <option value="assets/troll/eye_l/0001_1.png">Tired</option>
+                        <option value="assets/troll/eye_l/0001_2.png">Tired (Lashes)</option>
+                        <option value="assets/troll/eye_l/0001_3.png">Tired (Highlights)</option>
+                        <option value="assets/troll/eye_l/0001_4.png">Tired (Highlights + Lashes)</option>
+                        <option value="assets/troll/eye_l/0002_1.png">Rebel</option>
+                        <option value="assets/troll/eye_l/0002_2.png">Rebel (Lashes)</option>
+                        <option value="assets/troll/eye_l/0002_3.png">Rebel (Highlights)</option>
+                        <option value="assets/troll/eye_l/0002_4.png">Rebel (Highlights + Lashes)</option>
+                        <option value="assets/troll/eye_l/0003_1.png">Shy</option>
+                        <option value="assets/troll/eye_l/0003_2.png">Shy (Lashes)</option>
+                        <option value="assets/troll/eye_l/0003_3.png">Shy (Highlights)</option>
+                        <option value="assets/troll/eye_l/0003_4.png">Shy (Highlights + Lashes)</option>
+                        <option value="assets/troll/eye_l/0004_1.png">Determined</option>
+                        <option value="assets/troll/eye_l/0004_2.png">Determined (Lashes)</option>
+                        <option value="assets/troll/eye_l/0004_3.png">Determined (Highlights)</option>
+                        <option value="assets/troll/eye_l/0004_4.png">Determined (Highlights + Lashes)</option>
+                        <option value="assets/troll/eye_l/0005_1.png">Confident - Single Pupil</option>
+                        <option value="assets/troll/eye_l/0005_2.png">Confident - Horizontal Two Pupils</option>
+                        <option value="assets/troll/eye_l/0005_3.png">Confident - Vertical Two Pupils</option>
+                        <option value="assets/troll/eye_l/0005_4.png">Confident - Four Pupils</option>
+                        <option value="assets/troll/eye_l/0005_5.png">Confident - Seven Pupils</option>
+                        <option value="assets/troll/eye_l/0005_6.png">Confident - Single Pupil + Lashes</option>
+                        <option value="assets/troll/eye_l/0005_7.png">Confident - Horizontal Two Pupils + Lashes</option>
+                        <option value="assets/troll/eye_l/0005_8.png">Confident - Vertical Two Pupils + Lashes</option>
+                        <option value="assets/troll/eye_l/0005_9.png">Confident - Four Pupils + Lashes</option>
+                        <option value="assets/troll/eye_l/0005_10.png">Confident - Seven Pupils + Lashes</option>
+                    </select>
+                    
+
+                    <p>
+                        Right Eye
+                    </p>
+                    <select id="face_eye_r" onchange="refreshCanvas()">
+                        <option value="assets/troll/eye_r/0001_1.png">Tired</option>
+                        <option value="assets/troll/eye_r/0001_2.png">Tired (Lashes)</option>
+                        <option value="assets/troll/eye_r/0001_3.png">Tired (Highlights)</option>
+                        <option value="assets/troll/eye_r/0001_4.png">Tired (Highlights + Lashes)</option>
+                        <option value="assets/troll/eye_r/0002_1.png">Rebel</option>
+                        <option value="assets/troll/eye_r/0002_2.png">Rebel (Lashes)</option>
+                        <option value="assets/troll/eye_r/0002_3.png">Rebel (Highlights)</option>
+                        <option value="assets/troll/eye_r/0002_4.png">Rebel (Highlights + Lashes)</option>
+                        <option value="assets/troll/eye_r/0003_1.png">Shy</option>
+                        <option value="assets/troll/eye_r/0003_2.png">Shy (Lashes)</option>
+                        <option value="assets/troll/eye_r/0003_3.png">Shy (Highlights)</option>
+                        <option value="assets/troll/eye_r/0003_4.png">Shy (Highlights + Lashes)</option>
+                        <option value="assets/troll/eye_r/0004_1.png">Determined</option>
+                        <option value="assets/troll/eye_r/0004_2.png">Determined (Lashes)</option>
+                        <option value="assets/troll/eye_r/0004_3.png">Determined (Highlights)</option>
+                        <option value="assets/troll/eye_r/0004_4.png">Determined (Highlights + Lashes)</option>
+                        <option value="assets/troll/eye_r/0005_1.png">Confident - Single Pupil</option>
+                        <option value="assets/troll/eye_r/0005_2.png">Confident - Horizontal Two Pupils</option>
+                        <option value="assets/troll/eye_r/0005_3.png">Confident - Vertical Two Pupils</option>
+                        <option value="assets/troll/eye_r/0005_4.png">Confident - Four Pupils</option>
+                        <option value="assets/troll/eye_r/0005_5.png">Confident - Seven Pupils</option>
+                        <option value="assets/troll/eye_r/0005_6.png">Confident - Single Pupil + Lashes</option>
+                        <option value="assets/troll/eye_r/0005_7.png">Confident - Horizontal Two Pupils + Lashes</option>
+                        <option value="assets/troll/eye_r/0005_8.png">Confident - Vertical Two Pupils + Lashes</option>
+                        <option value="assets/troll/eye_r/0005_9.png">Confident - Four Pupils + Lashes</option>
+                        <option value="assets/troll/eye_r/0005_10.png">Confident - Seven Pupils + Lashes</option>
+                    </select>
+                    
+
+                    <p>
+                        Mouth
+                    </p>
+                    <select id="face_mouth" onchange="refreshCanvas()">
+                        <option value="assets/troll/mouths/0001_1.png">Neutral </option>
+                        <option value="assets/troll/mouths/0001_2.png">Neutral (Lips)</option>
+                        <option value="assets/troll/mouths/0001_3.png">Neutral (Fangs)</option>
+                        <option value="assets/troll/mouths/0001_4.png">Neutral (Fangs + Lips)</option>
+                        <option value="assets/troll/mouths/0002_1.png">Smiley</option>
+                        <option value="assets/troll/mouths/0002_2.png">Smiley (Lips)</option>
+                        <option value="assets/troll/mouths/0002_3.png">Smiley (Fangs)</option>
+                        <option value="assets/troll/mouths/0002_4.png">Smiley (Fangs + Lips)</option>
+                        <option value="assets/troll/mouths/0003_1.png">Cute Cat</option>
+                        <option value="assets/troll/mouths/0003_2.png">Cute Cat (Lips)</option>
+                        <option value="assets/troll/mouths/0003_3.png">Cute Cat (Fangs)</option>
+                        <option value="assets/troll/mouths/0003_4.png">Cute Cat (Fangs + Lips)</option>
+                        <option value="assets/troll/mouths/0004_1.png">Wide Smile</option>
+                        <option value="assets/troll/mouths/0004_2.png">Wide Smile (Lips)</option>
+                        <option value="assets/troll/mouths/0004_3.png">Wide Smile (Fangs)</option>
+                        <option value="assets/troll/mouths/0004_4.png">Wide Smile (Fangs + Lips)</option>
+                        <option value="assets/troll/mouths/0005_1.png">Wide Frown</option>
+                        <option value="assets/troll/mouths/0005_2.png">Wide Frown (Lips)</option>
+                        <option value="assets/troll/mouths/0005_3.png">Wide Frown (Fangs)</option>
+                        <option value="assets/troll/mouths/0005_4.png">Wide Frown (Fangs + Lips)</option>
+                    </select>
+                    
+
+                    <p>
+                        Face Accessory
+                    </p>
+                    <div>
+                        
+                        <select id="acc_glasses" onchange="refreshCanvas()">
+                            <option value="assets/troll/blank.png">None</option>
+                            <option value="assets/troll/accessory_face/0001.png">Square Glasses</option>
+                            <option value="assets/troll/accessory_face/0007.png">Square Sunglasses</option>
+                            <option value="assets/troll/accessory_face/0002.png">Circle Glasses</option>
+                            <option value="assets/troll/accessory_face/0006.png">Circle Sunglasses</option>
+                            <option value="assets/troll/accessory_face/0004.png">Cateye Glasses</option>
+                            <option value="assets/troll/accessory_face/0005.png">Cateye Sunglasses</option>
+                            <option value="assets/troll/accessory_face/0009.png">Semicircle Glasses</option>
+                            <option value="assets/troll/accessory_face/0010.png">Semicircle Glasses with Left Eyepatch</option>
+                            <option value="assets/troll/accessory_face/0011.png">Semicircle Glasses with Right Eyepatch</option>
+                            <option value="assets/troll/accessory_face/0003.png">Goggles</option>
+                            <option value="assets/troll/accessory_face/0008.png">Right Eyepatch</option>
+                        </select><br/>
+                        <input type="color" id="acc_glasses_color" value="#626262" onchange="refreshCanvas()"/>
