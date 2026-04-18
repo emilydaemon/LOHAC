@@ -51,9 +51,7 @@ If you have an addition or suggestion that would improve the site, please fork t
 
 ## Usage and License
 
-LOHAC's source code operates under the [MIT License](https://choosealicense.com/licenses/mit/). All of the art and visual assets used for the site and tools such as the Dollmaker and Shipixels do not fall under this. Make sure to contact the original authors about the usage rights.
-
-I decided to make the site open source to allow as many people to contribute and build onto it, as well as let it act as a learning tool for aspiring webmasters the same way I had used other sites to learn before. If you feel wrong about using this codebase without crediting, feel free to link back to the site (and make sure your project operates under the same license!).
+We're working out switching licenses right now. I feel incredibly sorry for inconveniencing any forkers, but I promise that the site will stay open source!
 
 ## Contact
 
