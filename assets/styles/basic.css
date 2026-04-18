@@ -31,14 +31,12 @@ body {
 }
 
 .banner {
-    background:url(/assets/bgtiles/sky_day.png);
+    background:url(/assets/bg_lohac.gif);
     background-size:cover;
-    background-attachment:fixed;
     width:100%;
     padding-top:70px;
-    padding-bottom:20px;
     image-rendering:pixelated;
-    color:black;
+    color:white;
 }
 
 .categories {

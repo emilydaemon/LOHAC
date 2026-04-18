@@ -5,7 +5,7 @@
     body {
         margin:0;
         font-family:arial;
-        background-image:url("assets/bg/tile.png");
+        background-image:url("/dollmaker/assets/bg/tile.png");
         background-position: 0px 0px;
         animation: bgscroll 10s linear infinite;
     }
@@ -35,7 +35,7 @@
     #dollpreview {
         border:1px solid black;
 
-        background-image:url("assets/bg/tile.png");
+        background-image:url("/dollmaker/assets/bg/tile.png");
         background-position: 0px 0px;
         animation: bgscroll 10s linear infinite;
     }
