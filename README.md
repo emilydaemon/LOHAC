@@ -1,6 +1,6 @@
 <center>
 
-<img src="" alt="LOGO WILL BE HERE SOON WHOOPS">
+<img src="https://raw.githubusercontent.com/aurabaster/LOHAC/refs/heads/main/assets/logos/lohac_color.png" alt="Start ID. Site logo. The text says LOHAC dot XYZ. End ID.">
 
 </center>
 
