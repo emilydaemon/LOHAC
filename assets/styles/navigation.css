@@ -60,7 +60,7 @@ body {
     color-scheme: only white;
     font-family:verdana;
     color:white;
-    background: linear-gradient(var(--lohac-darker-red), var(--lohac-dark-red));
+    background: linear-gradient(var(--lohac-dark-red), var(--lohac-darker-red));
     border-top: 4px solid var(--lohac-red);
     text-align:center;
     padding:0 20px 20px 40px;display:flex;align-items:center;
