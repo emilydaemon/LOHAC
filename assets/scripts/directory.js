@@ -19,8 +19,8 @@ function filterSelection() {
         selectedOptions.forEach(option => {
             document.querySelectorAll(option).forEach(element => {
                 element.style.display = "block";
+                results.push(element);
             })
-            results += document.querySelectorAll(option)
         })
         var resultstring;
 

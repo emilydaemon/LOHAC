@@ -1,52 +1,76 @@
 <style>
-    .imagepreview {border:1px solid rgba(0,0,0,0.5)}
+    .imagepreview {
+        border: 1px solid rgba(0, 0, 0, 0.5)
+    }
 </style>
 
 <body>
     <canvas width="900" height="508" class="imagepreview"></canvas>
 
     <div>
-    <label for="colorvalue">Text Color</label>
-    <input id="colorvalue" name="colorvalue" placeholder="Read FAQ for format info"></input>
-    <label for="colorvalue">Speaker Name</label>
-    <input id="suffixtext" name="suffixtext" placeholder="Can be blank"></input>
+        <label for="colorvalue">Text Color</label>
+        <input id="colorvalue" name="colorvalue" placeholder="Read FAQ for format info"></input>
     </div>
     <div>
-    <input id="talkspriteurl" placeholder="Talksprite PNG (full URL)" onchange="updateSources()"></input>
-    <select id="textboxvalue" onchange="updateSources()">
-        <option value="ui/dialogBoxBig.png">Default Textbox</option>
-        <option value="ui/kurbox.png">Kurloz Purple Textbox</option>
-    </select>
-    <select id="tagboxvalue" onchange="updateSources()">
-        <option value="ui/hashtagbar.png">Default Hashtag Bar</option>
-    </select>
-    <label id="xoffsetlabel" for="xoffset">Textbox Offset</label>
-    <input type="number" name="xoffset" id="xoffset" min="-170" max="700" placeholder="-170 to 700" value="0" onchange="changeLabel(this.value, '#xoffsetlabel', 'Textbox Offset')">
+        <label for="colorvalue">Speaker Name</label>
+        <input id="suffixtext" name="suffixtext" placeholder="Can be blank"></input>
     </div>
     <div>
-    <input type="text" id="charactertext" placeholder="Dialogue Text">
-    <input type="text" id="hashtagtext" placeholder="Hashtag Text">
+        <label for="talkspriteurl">Talksprite Image</label>
+        <input id="talkspriteurl" name="talkspriteurl" placeholder="Full URL, PNG" onchange="updateSources()"></input>
+    </div>
+    <div>
+        <label for="textbox">Textbox</label>
+        <select id="textboxvalue" name="textbox" onchange="updateSources()">
+            <option value="ui/dialogBoxBig.png">Default Textbox</option>
+            <option value="ui/kurbox.png">Kurloz Purple Textbox</option>
+        </select>
+    </div>
+    <div>
+        <label for="tagbox">Hashtag Bar</label>
+        <select id="tagboxvalue" name="tagbox" onchange="updateSources()">
+            <option value="ui/hashtagbar.png">Default Hashtag Bar</option>
+        </select>
+    </div>
+    <div>
+        <label id="xoffsetlabel" for="xoffset">Textbox Offset</label>
+        <input type="number" name="xoffset" id="xoffset" min="-170" max="700" placeholder="-170 to 700" value="0"
+            onchange="changeLabel(this.value, '#xoffsetlabel', 'Textbox Offset')">
+    </div>
+    <div>
+        <label id="charactertext" for="xoffset">Dialogue Text</label>
+        <input type="text" name="charactertext" id="charactertext" placeholder="Dialogue Text">
+    </div>
+    <div>
+        <label id="hashtagtext" for="xoffset">Hashtag Text</label>
+        <input type="text" name="hashtagtext" id="hashtagtext" placeholder="Hashtag Text">
     </div>
 
     <button onclick="generateImage()">Generate Image</button>
 
     <h1>FAQ</h1>
-    
+
     <details>
-    <p>As this is a HTML5 Canvas tool, you can use any color formatting supported by HTML.</p>
-    <p>To keep things simple, you may select from these common formats:</p>
-    <ul>
-        <li>RGB and RGBA values (formatted rgb(value) and rgba(value) respectively)</li>
-        <li>Hexadecimal/hex codes (make sure the # is at the front)</li>
-        <li><a href="https://www.w3schools.com/cssref/css_colors.php">The 140 preset CSS color names</a></li>
-    </ul>
-    <summary>Inputting Colors</summary>
+        <p>The talksprite should be a static image that is the height of the canvas (508px).</p>
+        <p>You will need to upload the sprite externally. Feel free to use a site like FileGarden!</p>
+        <summary>Formatting Talksprites</summary>
+    </details>
+
+    <details>
+        <p>As this is a HTML5 Canvas tool, you can use any color formatting supported by HTML.</p>
+        <p>To keep things simple, you may select from these common formats:</p>
+        <ul>
+            <li>RGB and RGBA values (formatted rgb(value) and rgba(value) respectively)</li>
+            <li>Hexadecimal/hex codes (make sure the # is at the front)</li>
+            <li><a href="https://www.w3schools.com/cssref/css_colors.php">The 140 preset CSS color names</a></li>
+        </ul>
+        <summary>Inputting Colors</summary>
     </details>
 
     <div style="display:none;">
-    <img id="img_textbox" src="ui/dialogBoxBig.png" onload="textboxLoaded = true" onError="textboxLoaded = false">
-    <img id="img_tagbox" src="ui/hashtagbar.png" onload="tagboxLoaded = true" onError="tagboxLoaded = false">
-    <img id="img_talksprite" onload="talkspriteLoaded = true" onError="talkspriteLoaded = false">
+        <img id="img_textbox" src="ui/dialogBoxBig.png" onload="textboxLoaded = true" onError="textboxLoaded = false">
+        <img id="img_tagbox" src="ui/hashtagbar.png" onload="tagboxLoaded = true" onError="tagboxLoaded = false">
+        <img id="img_talksprite" onload="talkspriteLoaded = true" onError="talkspriteLoaded = false">
     </div>
 
 </body>
@@ -78,7 +102,7 @@
 
     function generateImage() {
         xoffset = parseInt(document.querySelector("#xoffset").value);
-        ctx.clearRect(0,0,c.width, c.height);
+        ctx.clearRect(0, 0, c.width, c.height);
         if (textboxLoaded) {
             console.log("textbox loaded")
             ctx.drawImage(textboxImg, 272 + xoffset, 136);
@@ -93,7 +117,7 @@
         var lines = charactertext.match(/.{1,43}/g) || [];
 
         ctx.fillStyle = document.querySelector("#colorvalue").value;
-        ctx.font='bold 14px Courier New';
+        ctx.font = 'bold 14px Courier New';
 
         var yvalue = 170;
         lines.forEach(element => {
@@ -122,9 +146,9 @@
 
         if (hashtagtext) {
             if (tagboxLoaded) {
-            ctx.drawImage(tagboxImg, 272 + xoffset, 405);
-            ctx.fillStyle = "black";
-            ctx.fillText("#" + hashtagtext, 360 + xoffset, 435, 400)
+                ctx.drawImage(tagboxImg, 272 + xoffset, 405);
+                ctx.fillStyle = "black";
+                ctx.fillText("#" + hashtagtext, 360 + xoffset, 435, 400)
             }
         }
     }

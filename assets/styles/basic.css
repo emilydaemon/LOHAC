@@ -1,6 +1,7 @@
 :root {
-    --mspa-grey: rgb(239, 239, 239);
-    --dark-grey: #303030;
+    --mspa-grey: #efefef;
+    --dark-grey: #292929;
+    --grey-white: #dadada;
     --less-dark-green: #25ad00;
     --dark-green: #02650f;
 }
@@ -12,7 +13,7 @@
 body {
     font-family:verdana;
     color-scheme: light dark;
-    background-color: light-dark(white, #303030);
+    background-color: light-dark(var(--grey-white), var(--dark-grey));
     color: light-dark(black, white);
     background-size:128px;
     background-position:128px 128px;
