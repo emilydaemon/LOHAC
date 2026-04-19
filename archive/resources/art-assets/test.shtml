@@ -1,0 +1,33 @@
+<head>
+    <link rel="stylesheet" href="/assets/styles/basic.css">
+    <link rel="stylesheet" href="/assets/styles/navigation.css">
+    <link rel="stylesheet" href="/assets/styles/gallery.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, interactive-widget=resizes-content"> 
+</head>
+
+<body>
+    <nav>
+        <!--#include virtual="/navbar.html" --> 
+    </nav>
+    <main>
+        <center>
+            <h1>Page Title</h1>
+            <p>Click the image preview to view/download the full file.</p>
+            <p class="subscript">Wrong credit link? Asset removal/addition? Contact me via <a href="mailto:lohacmail@proton.me">lohacmail@proton.me</a></p>
+        </center>
+        <div class="gallery">
+            <div class="gallery_container">
+                <a class="gallery_attachment" href="https://file.garden/ZZO2vbOs0CiXN-Ec/strider/preloader.gif">
+                    <img src="https://file.garden/ZZO2vbOs0CiXN-Ec/strider/preloader.gif">
+                </a>
+                <p>Placeholder Title</p>
+                <p class="subtitle">
+                    <a href="creditlink">Placeholder Credit</a>
+                </p>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <!--#include virtual="/footer.html" --> 
+    </footer>
+</body>

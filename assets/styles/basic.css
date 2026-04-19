@@ -4,6 +4,7 @@
     --grey-white: #dadada;
     --lohac-red: #b30707;
     --lohac-dark-red: #80050b;
+    scrollbar-color: grey transparent;
 }
 
 @keyframes background_scroll {
@@ -20,8 +21,6 @@ body {
     background-size: 128px;
     background-position: 128px 128px;
     margin: 0;
-
-    scrollbar-color: grey transparent;
 }
 
 .divider {
@@ -35,6 +34,7 @@ body {
 .banner {
     background: url(/assets/bg_lohac.gif);
     background-size: cover;
+    background-position:center;
     width: 100%;
     padding-top: 70px;
     image-rendering: pixelated;
@@ -56,6 +56,11 @@ body {
     .categories {
         grid-template-columns: 50% 50%;
     }
+}
+
+a {
+    color: red;
+    text-decoration: none;
 }
 
 .container {
@@ -86,3 +91,5 @@ a:hover .container {
 img {
     max-width: 100%;
 }
+
+.subscript {text-align:center;font-style: italic;font-size:small;}

@@ -1,8 +1,3 @@
-async function loadSource(file) {
-    const sourceHtml = await fetch(file).then(e => e.text());
-    document.querySelector(".selecteddirectory").innerHTML = sourceHtml;
-}
-
 function filterSelection() {
         var filtSelector = document.querySelector(".filterselect");
         selectedOptions = [];
@@ -37,5 +32,3 @@ function filterSelection() {
             element.style.display = "flex";
         });
     }
-
-loadSource("source/tools.html");

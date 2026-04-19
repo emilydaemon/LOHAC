@@ -12,7 +12,7 @@ This site has been in closed development for over a year now, starting as the Ho
 ## Navigating the Repository
 
 The main directory has a couple files:
-- `/LICENSE` is the project license (MIT)
+- `/LICENSE` is the project license (GNU GPL v3)
 - `/favicon.ico` is the website favicon. I keep it here for fun.
 - `/index.html` is the main index
 - `/navigation.html` and `footer.html` are the navbar and footer drawn to each page that uses the `/assets/scripts/setup.js` script and has both a `<nav>` and `<footer>` element.
@@ -51,9 +51,7 @@ If you have an addition or suggestion that would improve the site, please fork t
 
 ## Usage and License
 
-LOHAC's source code operates under the [MIT License](https://choosealicense.com/licenses/mit/). All of the art and visual assets used for the site and tools such as the Dollmaker and Shipixels do not fall under this. Make sure to contact the original authors about the usage rights.
-
-I decided to make the site open source to allow as many people to contribute and build onto it, as well as let it act as a learning tool for aspiring webmasters the same way I had used other sites to learn before. If you feel wrong about using this codebase without crediting, feel free to link back to the site (and make sure your project operates under the same license!).
+The current project operates under the [GNU GPL v3](https://choosealicense.com/licenses/gpl-3.0/) license.
 
 ## Contact
 

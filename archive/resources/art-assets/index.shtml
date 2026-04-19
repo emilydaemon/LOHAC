@@ -1,0 +1,62 @@
+<head>
+    <link rel="stylesheet" href="/assets/styles/basic.css">
+    <link rel="stylesheet" href="/assets/styles/navigation.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, interactive-widget=resizes-content"> 
+</head>
+
+<body>
+    <nav>
+        <!--#include virtual="/navbar.html" --> 
+    </nav>
+    <main>
+        <div class="divider">
+            <h1 style="text-align: center;">Custom Assets</h1>
+        </div>
+        <div class="categories">
+            <a href="/archive/resources/art-assets/original/houses.shtml">
+                <div class="container">
+                    <img src="/assets/category/customhouseassets.png">
+                    <div class="padding">
+                        <h2>Custom House Assets</h2>
+                        <p>Custom furniture, room templates and other resources to help you build your very own Homestuck-style rooms.</p>
+                    </div>
+                </div>
+            </a>
+            <a href="/archive/resources/art-assets/original/sprites.shtml">
+                <div class="container">
+                    <img src="/assets/category/customsprites.png">
+                    <div class="padding">
+                        <h2>Custom Character Sprite Assets</h2>
+                        <p>Bases, parts and other resources to help you make your own sprites!</p>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div class="divider">
+            <h1 style="text-align: center;">Homestuck Asset Rips</h1>
+        </div>
+        <div class="categories">
+            <a href="/archive/resources/art-assets/rips/houses.shtml">
+                <div class="container">
+                    <img src="/assets/category/officialhouseassets.png">
+                    <div class="padding">
+                        <h2>Ripped House Assets</h2>
+                        <p>House layouts, furniture and other house assets from the Homestuck webcomics.</p>
+                    </div>
+                </div>
+            </a>
+            <a href="/archive/resources/art-assets/rips/sprites.shtml">
+                <div class="container">
+                    <img src="/assets/category/officialsprites.png">
+                    <div class="padding">
+                        <h2>Ripped Character Sprites</h2>
+                        <p>Character sprites, spritesheets and sprite animations!</p>
+                    </div>
+                </div>
+            </a>
+        </div>
+    </main>
+    <footer>
+        <!--#include virtual="/footer.html" --> 
+    </footer>
+</body>

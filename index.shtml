@@ -1,0 +1,119 @@
+<html lang="en">
+
+<head>
+    <title>The Homestuck Clubhouse</title>
+
+    <link rel="stylesheet" href="/assets/styles/basic.css">
+    <link rel="stylesheet" href="/assets/styles/navigation.css">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, interactive-widget=resizes-content"> 
+    <meta content="https://homestuck.club" property="og:url">
+    <meta content="https://homestuck.club/favicon.png" property="og:image">
+    <meta content="#15ee15" data-react-helmet="true" name="theme-color">
+    <meta content="The Homestuck Clubhouse" property="og:title">
+    <meta content="For fans who love Homestuck" property="og:description">
+
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+
+</head>
+<style>
+    .readhomestuck_button {
+        display: block;
+        width: fit-content;
+        background: linear-gradient(var(--lohac-red), var(--lohac-dark-red));
+        padding: 10px;
+        border: outset 4px var(--lohac-dark-red);
+        border-radius: 5px;
+        color: white;
+        text-decoration: none;
+        font-family: courier;
+        font-weight: bold;
+        font-size: x-large;
+        transition: scale 0.2s;
+    }
+
+    .readhomestuck_button:hover {
+        border-style: inset;
+        scale: 110%;
+    }
+</style>
+
+
+<body>
+
+    <nav>
+        <!--#include virtual="/navbar.html" -->
+    </nav>
+
+    <div class="banner" style="padding:100px 0;margin-top:-100px;">
+        <center>
+            <br /><br />
+            <img src="/assets/logos/lohac_color.png" width="500px" style="margin-bottom:10px;">
+            <p>New to the comic?</p>
+            <a class="readhomestuck_button" href="">GUIDE COMING SOON</a>
+        </center>
+    </div>
+
+
+    <div class="divider"></div>
+    <div class="content">
+        <div style="width:60%;margin:50px auto;">
+            <h2>About The Site</h2>
+            <p>LOHAC.xyz is a fansite dedicated to the Homestuck franchise and its adjacent works. We center focus on
+                the fandom, with some occassional archive content here and there.</p>
+        </div>
+        <div class="divider">
+            <h1 style="text-align: center;">Available on LOHAC</h1>
+        </div>
+        <div class="categories">
+            <a href="/dollmaker/index.html">
+                <div class="container">
+                    <img src="/assets/category/trollmaker.gif">
+                    <div class="padding">
+                        <h3>The TrollMaker</h3>
+                        <p>A modern take on a Homestuck dollmaker, with more than 100 wholly original parts. Mix and
+                            match over 30 layers to make your very own troll!</p>
+                    </div>
+                </div>
+            </a>
+            <a href="/shipixels/index.shtml">
+                <div class="container">
+                    <img src="/assets/category/shipixels.gif">
+                    <div class="padding">
+                        <h3>Shipixels</h3>
+                        <p>A basic generator for making quick and easy ship pixels using Feastings and others' Homestuck
+                            pixelings.</p>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div class="divider">
+            <h1 style="text-align: center;">Other Content</h1>
+        </div>
+        <div class="categories">
+            <a href="/directory/index.shtml">
+                <div class="container">
+                    <img src="/assets/category/programs.png">
+                    <div class="padding">
+                        <h2>Homestuck Fandom Directory</h2>
+                        <p>A list of Homestuck fanprojects, easily accessible from one webpage.</p>
+                    </div>
+                </div>
+            </a>
+            <a href="/archive/resources/art-assets/index.shtml">
+                <div class="container">
+                    <img src="/assets/category/artassets.png">
+                    <div class="padding">
+                        <h2>Homestuck Art Assets</h2>
+                        <p>Homestuck art resources and assets from various authors.</p>
+                    </div>
+                </div>
+            </a>
+        </div>
+    </div>
+    <footer>
+        <!--#include virtual="/footer.html" -->
+    </footer>
+</body>
+
+</html>

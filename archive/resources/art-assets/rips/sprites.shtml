@@ -1,0 +1,144 @@
+<head>
+    <link rel="stylesheet" href="/assets/styles/basic.css">
+    <link rel="stylesheet" href="/assets/styles/navigation.css">
+    <link rel="stylesheet" href="/assets/styles/gallery.css">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <nav>
+        <!--#include virtual="/navbar.html" --> 
+    </nav>
+    <main>
+        <center>
+        <h1>Official Homestuck Sprites</h1>
+        <p>All content on Official subpages consists of rips and edits of artwork from the comic. Credit goes to Andrew Hussie and other artists.</p>
+        <p>Click the image preview to view/download the full file.</p>
+        <p class="subscript">Wrong credit link? Asset removal/addition? Contact me via <a href="mailto:lohacmail@proton.me">lohacmail@proton.me</a></p>
+        </center>
+        <h1 style="text-align:center;">Kid Sprites</h1>
+        <h2 style="text-align:center;">Spritesheets</h2>
+        <h2 style="text-align:center;">Sprite Animations</h2>
+        <h2 style="text-align:center;">Single Sprites</h2>
+        <h1 style="text-align:center;">Troll Sprites</h1>
+        <h2 style="text-align:center;">Spritesheets</h2>
+        <div class="gallery">
+            <div class="gallery_container">
+                <a class="gallery_attachment" href="/archive/downloads/AssetRips/Sprites/Spritesheets/TrollSheets/Aradia_SpriteSheet_Anti1029.png">
+                    <img src="/archive/downloads/AssetRips/Sprites/Spritesheets/TrollSheets/Aradia_SpriteSheet_Anti1029.png">
+                </a>
+                <p>Aradia Megido Spritesheet, ripped from flashes and some panels</p>
+                <p class="subtitle">
+                    <a href="https://anti1029-art-blog.tumblr.com/">Anti1029</a>
+                </p>
+            </div>
+            <div class="gallery_container">
+                <a class="gallery_attachment" href="/archive/downloads/AssetRips/Sprites/Spritesheets/TrollSheets/Tavros_SpriteSheet_Anti1029.png">
+                    <img src="/archive/downloads/AssetRips/Sprites/Spritesheets/TrollSheets/Tavros_SpriteSheet_Anti1029.png">
+                </a>
+                <p>Tavros Nitram Spritesheet, mostly from panels but there's some flash assets</p>
+                <p class="subtitle">
+                    <a href="https://anti1029-art-blog.tumblr.com/">Anti1029</a>
+                </p>
+            </div>
+            <div class="gallery_container">
+                <a class="gallery_attachment" href="/archive/downloads/AssetRips/Sprites/Spritesheets/TrollSheets/Sollux_SpriteSheet_Anti1029.png">
+                    <img src="/archive/downloads/AssetRips/Sprites/Spritesheets/TrollSheets/Sollux_SpriteSheet_Anti1029.png">
+                </a>
+                <p>Sollux Captor Spritesheet, ripped from panels and flashes</p>
+                <p class="subtitle">
+                    <a href="https://anti1029-art-blog.tumblr.com/">Anti1029</a>
+                </p>
+            </div>
+            <div class="gallery_container">
+                <a class="gallery_attachment" href="/archive/downloads/AssetRips/Sprites/Spritesheets/TrollSheets/Karkat_SpriteSheet_Anti1029.png">
+                    <img src="/archive/downloads/AssetRips/Sprites/Spritesheets/TrollSheets/Karkat_SpriteSheet_Anti1029.png">
+                </a>
+                <p>Karkat Vantas Spritesheet, ripped from flashes and some panels</p>
+                <p class="subtitle">
+                    <a href="https://anti1029-art-blog.tumblr.com/">Anti1029</a>
+                </p>
+            </div>
+            <div class="gallery_container">
+                <a class="gallery_attachment" href="/archive/downloads/AssetRips/Sprites/Spritesheets/TrollSheets/Nepeta_SpriteSheet_Anti1029.png">
+                    <img src="/archive/downloads/AssetRips/Sprites/Spritesheets/TrollSheets/Nepeta_SpriteSheet_Anti1029.png">
+                </a>
+                <p>Nepeta Leijon Spritesheet, ripped from flashes and a few panels</p>
+                <p class="subtitle">
+                    <a href="https://anti1029-art-blog.tumblr.com/">Anti1029</a>
+                </p>
+            </div>
+            <div class="gallery_container">
+                <a class="gallery_attachment" href="/archive/downloads/AssetRips/Sprites/Spritesheets/TrollSheets/Kanaya_SpriteSheet_Anti1029.png">
+                    <img src="/archive/downloads/AssetRips/Sprites/Spritesheets/TrollSheets/Kanaya_SpriteSheet_Anti1029.png">
+                </a>
+                <p>Kanaya Maryam Spritesheet, ripped from flashes and some panels</p>
+                <p class="subtitle">
+                    <a href="https://anti1029-art-blog.tumblr.com/">Anti1029</a>
+                </p>
+            </div>
+            <div class="gallery_container">
+                <a class="gallery_attachment" href="/archive/downloads/AssetRips/Sprites/Spritesheets/TrollSheets/Terezi_SpriteSheet_Anti1029.png">
+                    <img src="/archive/downloads/AssetRips/Sprites/Spritesheets/TrollSheets/Terezi_SpriteSheet_Anti1029.png">
+                </a>
+                <p>Terezi Pyrope Spritesheet, ripped from flashes and some panels</p>
+                <p class="subtitle">
+                    <a href="https://anti1029-art-blog.tumblr.com/">Anti1029</a>
+                </p>
+            </div>
+            <div class="gallery_container">
+                <a class="gallery_attachment" href="/archive/downloads/AssetRips/Sprites/Spritesheets/TrollSheets/Vriska_SpriteSheet_Anti1029.png">
+                    <img src="/archive/downloads/AssetRips/Sprites/Spritesheets/TrollSheets/Vriska_SpriteSheet_Anti1029.png">
+                </a>
+                <p>Vriska Serket Spritesheet, ripped from flashes and some panels</p>
+                <p class="subtitle">
+                    <a href="https://anti1029-art-blog.tumblr.com/">Anti1029</a>
+                </p>
+            </div>
+            <div class="gallery_container">
+                <a class="gallery_attachment" href="/archive/downloads/AssetRips/Sprites/Spritesheets/TrollSheets/Equius_SpriteSheet_Anti1029.png">
+                    <img src="/archive/downloads/AssetRips/Sprites/Spritesheets/TrollSheets/Equius_SpriteSheet_Anti1029.png">
+                </a>
+                <p>Equius Zahhak Spritesheet, ripped from flashes and a few panels</p>
+                <p class="subtitle">
+                    <a href="https://anti1029-art-blog.tumblr.com/">Anti1029</a>
+                </p>
+            </div>
+            <div class="gallery_container">
+                <a class="gallery_attachment" href="/archive/downloads/AssetRips/Sprites/Spritesheets/TrollSheets/Gamzee_SpriteSheet_Anti1029.png">
+                    <img src="/archive/downloads/AssetRips/Sprites/Spritesheets/TrollSheets/Gamzee_SpriteSheet_Anti1029.png">
+                </a>
+                <p>Gamzee Makara Spritesheet, ripped from panels and flashes</p>
+                <p class="subtitle">
+                    <a href="https://anti1029-art-blog.tumblr.com/">Anti1029</a>
+                </p>
+            </div>
+            <div class="gallery_container">
+                <a class="gallery_attachment" href="/archive/downloads/AssetRips/Sprites/Spritesheets/TrollSheets/Eridan_SpriteSheet_Anti1029.png">
+                    <img src="/archive/downloads/AssetRips/Sprites/Spritesheets/TrollSheets/Eridan_SpriteSheet_Anti1029.png">
+                </a>
+                <p>Eridan Ampora Spritesheet, ripped mostly from flashes but there's some panel rips here</p>
+                <p class="subtitle">
+                    <a href="https://anti1029-art-blog.tumblr.com/">Anti1029</a>
+                </p>
+            </div>
+            <div class="gallery_container">
+                <a class="gallery_attachment" href="/archive/downloads/AssetRips/Sprites/Spritesheets/TrollSheets/Feferi_SpriteSheet_Anti1029.png">
+                    <img src="/archive/downloads/AssetRips/Sprites/Spritesheets/TrollSheets/Feferi_SpriteSheet_Anti1029.png">
+                </a>
+                <p>Feferi Peixes Spritesheet, ripped from flashes and some panels</p>
+                <p class="subtitle">
+                    <a href="https://anti1029-art-blog.tumblr.com/">Anti1029</a>
+                </p>
+            </div>
+
+
+        </div>
+        <h2 style="text-align:center;">Sprite Animations</h2>
+        <h2 style="text-align:center;">Single Sprites</h2>
+    </main>
+    <footer>
+        <!--#include virtual="/footer.html" --> 
+    </footer>
+</body>

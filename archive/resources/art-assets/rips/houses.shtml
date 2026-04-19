@@ -1,0 +1,101 @@
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="/assets/styles/basic.css">
+    <link rel="stylesheet" href="/assets/styles/navigation.css">
+    <link rel="stylesheet" href="/assets/styles/gallery.css">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+</head>
+
+<body>
+    <nav>
+        <!--#include virtual="/navbar.html" -->
+    </nav>
+    <main>
+        <center>
+            <h1>Official Homestuck House Assets</h1>
+            <p>All content on Official subpages consists of rips and edits of artwork from the comic. Credit goes to Andrew Hussie and other artists.</p>
+            <p>Click the image preview to view/download the full file.</p>
+            <p class="subscript">Wrong credit link? Asset removal/addition? Contact me via <a href="mailto:lohacmail@proton.me">lohacmail@proton.me</a></p>
+        </center>
+        <h2 style="text-align:center;">House Layouts</h2>
+        <div class="gallery">
+            <div class="gallery_container">
+                <a class="gallery_attachment"
+                    href="/archive/downloads/AssetRips/Houses/HouseLayouts/HarleyHouse_Full_lesbrarians.png">
+                    <img src="/archive/downloads/AssetRips/Houses/HouseLayouts/HarleyHouse_Full_lesbrarians.png">
+                </a>
+                <p>Full reference of the Harley household</p>
+                <p class="subtitle">
+                    <a href="https://lesbrarians.tumblr.com/">lesbrarians</a>
+                </p>
+            </div>
+            <div class="gallery_container">
+                <a class="gallery_attachment"
+                    href="/archive/downloads/AssetRips/Houses/HouseLayouts/LalondeHouse_Full_lesbrarians.png">
+                    <img src="/archive/downloads/AssetRips/Houses/HouseLayouts/LalondeHouse_Full_lesbrarians.png">
+                </a>
+                <p>Full reference of the Lalonde (Rose's) household</p>
+                <p class="subtitle">
+                    <a href="https://lesbrarians.tumblr.com/">lesbrarians</a>
+                </p>
+            </div>
+            <div class="gallery_container">
+                <a class="gallery_attachment"
+                    href="/archive/downloads/AssetRips/Houses/HouseLayouts/EgbertHouse_Full_lesbrarians.png">
+                    <img src="/archive/downloads/AssetRips/Houses/HouseLayouts/EgbertHouse_Full_lesbrarians.png">
+                </a>
+                <p>Full reference of the Egbert household</p>
+                <p class="subtitle">
+                    <a href="https://lesbrarians.tumblr.com/">lesbrarians</a>
+                </p>
+            </div>
+            <div class="gallery_container">
+                <a class="gallery_attachment"
+                    href="/archive/downloads/AssetRips/Houses/HouseLayouts/CrockerHouse_Full_lesbrarians.png">
+                    <img src="/archive/downloads/AssetRips/Houses/HouseLayouts/CrockerHouse_Full_lesbrarians.png">
+                </a>
+                <p>Full reference of the Crocker household</p>
+                <p class="subtitle">
+                    <a href="https://lesbrarians.tumblr.com/">lesbrarians</a>
+                </p>
+            </div>
+            <div class="gallery_container">
+                <a class="gallery_attachment"
+                    href="/archive/downloads/AssetRips/Houses/HouseLayouts/StriderApt_lesbrarians.png">
+                    <img src="/archive/downloads/AssetRips/Houses/HouseLayouts/StriderApt_lesbrarians.png">
+                </a>
+                <p>Reference of the Strider apartment's main room</p>
+                <p class="subtitle">
+                    <a href="https://lesbrarians.tumblr.com/">lesbrarians</a>
+                </p>
+            </div>
+            <div class="gallery_container">
+                <a class="gallery_attachment"
+                    href="/archive/downloads/AssetRips/Houses/HouseLayouts/DaveRoom_lesbrarians.png">
+                    <img src="/archive/downloads/AssetRips/Houses/HouseLayouts/DaveRoom_lesbrarians.png">
+                </a>
+                <p>Reference of Dave's room</p>
+                <p class="subtitle">
+                    <a href="https://lesbrarians.tumblr.com/">lesbrarians</a>
+                </p>
+            </div>
+            <div class="gallery_container">
+                <a class="gallery_attachment"
+                    href="/archive/downloads/AssetRips/Houses/HouseLayouts/DirkRoom_lesbrarians.png">
+                    <img src="/archive/downloads/AssetRips/Houses/HouseLayouts/DirkRoom_lesbrarians.png">
+                </a>
+                <p>Reference of Dirk's room</p>
+                <p class="subtitle">
+                    <a href="https://lesbrarians.tumblr.com/">lesbrarians</a>
+                </p>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <!--#include virtual="/footer.html" -->
+    </footer>
+</body>
+
+</html>

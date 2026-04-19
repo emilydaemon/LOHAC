@@ -1,0 +1,467 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="/assets/styles/navigation.css">
+        <link rel="stylesheet" href="/assets/styles/directory.css">
+        <link rel="stylesheet" href="/assets/styles/basic.css">
+        <link rel="favicon" href="/favicon.ico">
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, interactive-widget=resizes-content"> 
+        <meta content="Homestuck Fandom - The Homestuck Clubhouse" property="og:title">
+        <meta content="Meet the Homestuck Fandom! This is a list of Fandom social media spaces that you can engage in as a fan." property="og:description">
+    	<meta content="/assets/favicon.png" property="og:image">
+    	<meta content="#e00707" data-react-helmet="true" name="theme-color">
+    </head>
+    <body>
+        <nav>
+            <!--#include virtual="/navbar.html" --> 
+        </nav>
+        <main>
+            <h1>The Homestuck Fandom Directory</h1>
+            <p>A comprehensive and constantly expanding list of various types of fandom creations and projects.</p>
+            <div class="subscript">
+                <p>Want your creation added or removed? Contact me via <a href="mailto:lohacmail@proton.me">lohacmail@proton.me</a></p>
+                <p>The site is currently in desperate need of content for the Resources, Fanfiction and Collaborations categories.</p>
+            </div>
+        </main>
+
+        <div style="text-align:center;">
+            <h1>Filter Tags</h1>
+        <select multiple class="filterselect" onchange="filterSelection();">
+            <option value=".option">Show Everything</option>
+            <option disabled>> Availability/Hosting</option>
+            <option value=".selfhost">Available on LOHAC</option>
+            <option value=".webhost">Web Hosted</option>
+            <option value=".desktop">Desktop App</option>
+            <option value=".mobile">Mobile App</option>
+            <option disabled>> Category: Programs</option>
+            <option value=".program">Show All from Programs</option>
+            <option value=".shimeji">Shimeji</option>
+            <option value=".simulator">Simulator</option>
+            <option disabled>> Category: Tools</option>
+            <option value=".tool">Show All from Tools</option>
+            <option value=".imagegenerator">Image Generator</option>
+            <option value=".textgenerator">Text Generator</option>
+            <option value=".othergenerator">Other Generator</option>
+            <option disabled>> Category: Games, Mods</option>
+            <option value=".game">Game</option>
+            <option value=".mod">Mod</option>
+            <option value=".vn">Visual Novel</option>
+            <option value=".idle">Idle Game</option>
+            <option value=".sburblike">SBURB-like</option>
+            <option value=".rpg">RPG</option>
+            <option value=".other">Miscellaneous</option>
+            <option disabled>> Category: Communities</option>
+            <option value=".fandom">Show All from Communities</option>
+            <option value=".discord">Discord</option>
+            <option value=".tumblr">Tumblr</option>
+            <option value=".twitter">Twitter</option>
+            <option value=".other">Other Platforms</option>
+            <option value=".external">Original Platform</option>
+            <option value=".social">Social Media</option>
+            <option value=".booru">Booru</option>
+            <option disabled>> Other Tags</option>
+            <option value=".roleplay">Roleplay</option>
+            <option value=".adult">18+</option>
+            <option value=".charactermaking">Character Creation</option>
+            <option value=".shipping">Shipping</option>
+            <option value=".sburb">Sburb & Classpecting</option>
+            <option value=".writing">Fan Writing</option>
+            <option value=".mspfa">MSPFA</option>
+        </select>
+        </div>
+        <div class="options">
+        <a href="/originals/discord.html" class="option fandom discord">
+            <div class="container">
+                <div class="padding scroll">
+                    <h2>Land of Heat and Clockwork</h2>
+                    <div class="tags">
+                        <p style="--accent-color:green;">Discord</p>
+                    </div>
+                    <p>Discuss LOHAC.xyz, the site you're currently using, along with the media it is based on.</p>
+                    <p>Currently the best place to tune in for site updates!</p>
+                </div>
+                <div class="previewimage" style="background-image: url(/assets/favicon.png)"></div>
+            </div>
+        </a>
+        <a href="/originals/dollmaker/index.html" class="option tool selfhost webhost imagegenerator charactermaking">
+            <div class="container">
+                <div class="padding scroll">
+                    <h2>The TrollMaker</h2>
+                    <p style="margin:0;">HSCH (additional credits listed on page)</p>
+                    <div class="tags">
+                        <p style="--accent-color:blue;">Tool</p>
+                        <p style="--accent-color: blue">Image Generator</p>
+                        <p style="--accent-color: purple">Character Creation</p>
+                        <p style="--accent-color:var(--lohac-red);">Available on LOHAC</p>
+                        <p style="--accent-color:teal;">Web Hosted</p>
+                    </div>
+                    <p>A modern take on a Homestuck dollmaker, with more than 200 wholly original parts. Mix and match over 30 layers to make your very own troll!</p>
+                </div>
+                <div class="previewimage" style="background-image: url(thumbnails/trollmaker.gif)"></div>
+            </div>
+        </a>
+        <a href="/originals/shipixels/index.html" class="option tool selfhost webhost imagegenerator shipping">
+            <div class="container">
+                <div class="padding scroll">
+                    <h2>Shipixels</h2>
+                    <p style="margin:0;">HSCH, Feastings (additional credits listed on page)</p>
+                    <div class="tags">
+                        <p style="--accent-color:blue;">Tool</p>
+                        <p style="--accent-color: violet">Image Generator</p>
+                        <p style="--accent-color: darkred">Shipping</p>
+                        <p style="--accent-color:var(--lohac-red);">Available on LOHAC</p>
+                        <p style="--accent-color:teal;">Web Hosted</p>
+                    </div>
+                    <p>A basic generator for making quick and easy ship pixels using Feastings and others' Homestuck pixelings. Has a custom asset feature and many original sprites of its own!</p>
+                </div>
+                <div class="previewimage" style="background-image: url(thumbnails/shipixels.gif);"></div>
+            </div>
+        </a>
+        <a href="https://cjroshi.github.io/the-classpect-connector/index.html" class="option tool webhost sburb">
+            <div class="container">
+                <div class="padding scroll">
+                    <h2>The Classpect Connector</h2>
+                    <p style="margin:0;">Nino Roshi AKA caprineCappuccino</p>
+                    <div class="tags">
+                        <p style="--accent-color:blue;">Tool</p>
+                        <p style="--accent-color:lime;color:black;">SBURB & Classpecting</p>
+                        <p style="--accent-color:teal;">Web Hosted</p>
+                    </div>
+                    <p>Described as a web-based tool for searching numerically and/or geometrically related classpects. Based on the newest canon classpecting information from Hussie, making it very up-to-date when it comes to fan speculation.</p>
+                </div>
+                <div class="previewimage" style="background-image: url(thumbnails/classpectconnector.png)"></div>
+            </div>
+        </a>
+        <a href="http://www.farragofiction.com/DollSim/" class="option tool webhost imagegenerator charactermaking">
+            <div class="container">
+                <div class="padding scroll">
+                    <h2>DollSim</h2>
+                    <p style="margin:0;">FarragoFiction</p>
+                    <div class="tags">
+                        <p style="--accent-color:blue;">Tool</p>
+                        <p style="--accent-color: blue">Image Generator</p>
+                        <p style="--accent-color: purple">Character Creation</p>
+                        <p style="--accent-color:teal;">Web Hosted</p>
+                    </div>
+                    <p>The most popular Homestuck dollmaker. With over 5 thousand parts, you can make any character your heart desires! Just remember to credit the original site when using.</p>
+                </div>
+                <div class="previewimage" style="background-image: url(thumbnails/dollsim.png)"></div>
+            </div>
+        </a>
+        <a href="http://www.farragofiction.com/SBURBSim/landing.html" class="option program simulator webhost sburb">
+            <div class="container">
+                <div class="padding scroll">
+                    <h2>SburbSim</h2>
+                    <p style="margin:0;">FarragoFiction</p>
+                    <div class="tags">
+                        <p style="--accent-color:orange;">Program</p>
+                        <p style="--accent-color:orange;">Simulator</p>
+                        <p style="--accent-color:teal;">Web Hosted</p>
+                        <p style="--accent-color:lime;color:black;">SBURB & Classpecting</p>
+                    </div>
+                    <p>A browser-based Sburb simulator. Make your own session, or view other people's created sessions! Just make sure to bring a Space player with you.</p>
+                </div>
+                <div class="previewimage" style="background-image: url(thumbnails/sburbsim.png)"></div>
+            </div>
+        </a>
+        <a href="https://flaringk.github.io/quadrantmaker/" class="option tool webhost imagegenerator shipping">
+            <div class="container">
+                <div class="padding scroll">
+                    <h2>Quadrant Maker</h2>
+                    <p style="margin:0;">FlaringK</p>
+                    <div class="tags">
+                        <p style="--accent-color:blue;">Tool</p>
+                        <p style="--accent-color:blue;">Image Generator</p>
+                        <p style="--accent-color:darkred;">Shipping</p>
+                        <p style="--accent-color:teal;">Web Hosted</p>
+                    </div>
+                    <p>A tool for generating quadrant pairing GIFs based on panels from the original comic. Put in your favorite pairing, or use for a ship from a completely different series!</p>
+                </div>
+                <div class="previewimage" style="background-image: url(thumbnails/quadrantmaker.gif)"></div>
+            </div>
+        </a>
+        <a href="https://flaringk.github.io/homestuck5plus/" class="option tool webhost writing mspfa">
+            <div class="container">
+                <div class="padding scroll">
+                    <h2>Homestuck5plus</h2>
+                    <p style="margin:0;">FlaringK (additional credits listed on page)</p>
+                    <div class="tags">
+                        <p style="--accent-color:blue;">Tool</p>
+                        <p style="--accent-color:grey;">Fan Writing</p>
+                        <p style="--accent-color:green;">MSPFA</p>
+                        <p style="--accent-color:teal;">Web Hosted</p>
+                    </div>
+                    <p>Automatically format Homestuck dialogue and narration for AO3, MSPFA, Tumblr and lots of other sites. Read the initial log or click "Help!" to learn how to use it.</p>
+                </div>
+                <div class="previewimage" style="background-image: url(thumbnails/hs5plus.png)"></div>
+            </div>
+        </a>
+        <a href="https://flaringk.github.io/gifstuck/" class="option tool webhost imagegenerator mspfa">
+            <div class="container">
+                <div class="padding scroll">
+                    <h2>GIFstuck</h2>
+                    <p style="margin:0;">FlaringK</p>
+                    <div class="tags">
+                        <p style="--accent-color:blue;">Tool</p>
+                        <p style="--accent-color: blue">Image Generator</p>
+                        <p style="--accent-color:green;">MSPFA</p>
+                        <p style="--accent-color:teal;">Web Hosted</p>
+                    </div>
+                    <p>Generate Homestuck GIFs to use in your MSPFAs. Currently contains a name-entry animation, strife specibus allocation, alchemy equations and a First Guardian effect.</p>
+                </div>
+                <div class="previewimage" style="background-image: url(thumbnails/gifstuck.gif)"></div>
+            </div>
+        </a>
+        <a href="https://flaringk.github.io/mspaMapGenerator/" class="option tool webhost othergenerator mspfa">
+            <div class="container">
+                <div class="padding scroll">
+                    <h2>Homestuck Map Generator</h2>
+                    <p style="margin:0;">FlaringK</p>
+                    <div class="tags">
+                        <p style="--accent-color:blue;">Tool</p>
+                        <p style="--accent-color: blue;">Other Generator</p>
+                        <p style="--accent-color:green;">MSPFA</p>
+                        <p style="--accent-color:teal;">Web Hosted</p>
+
+                    </div>
+                    <p>Generate HTML code for a Homestuck-style adventure map with ease. Very customizable, you don't even need to crop your images!</p>
+                </div>
+                <div class="previewimage" style="background-image: url(thumbnails/homestuckmapgenerator.png);"></div>
+            </div>
+        </a>
+        <a href="https://mspfa.com/?s=41577&p=1" class="option tool webhost othergenerator mspfa">
+            <div class="container">
+                <div class="padding scroll">
+                    <h2>Flare's CSS Textboxes</h2>
+                    <p style="margin:0;">FlaringK</p>
+                    <div class="tags">
+                        <p style="--accent-color:blue;">Tool</p>
+                        <p style="--accent-color: blue">Other Generator</p>
+                        <p style="--accent-color:green;">MSPFA</p>
+                        <p style="--accent-color:teal;">Web Hosted</p>
+                    </div>
+                    <p>A selection of CSS textboxes, effects, themes and tools to use when making MS Paint Adventures. A lot of resources that aren't on here are linked there!</p>
+                </div>
+                <div class="previewimage" style="background-image: url(thumbnails/csstextboxes.png)"></div>
+            </div>
+        </a>
+        <a href="https://flaringk.github.io/quirkbuilder/" class="option tool webhost textgenerator mspfa writing">
+            <div class="container">
+                <div class="padding scroll">
+                    <h2>Homestuck Quirk Builder</h2>
+                    <p style="margin:0;">FlaringK</p>
+                    <div class="tags">
+                        <p style="--accent-color:blue;">Tool</p>
+                        <p style="--accent-color: blue">Text Generator</p>
+                        <p style="--accent-color:grey;">Fan Writing</p>
+                        <p style="--accent-color:green;">MSPFA</p>
+                        <p style="--accent-color: purple">Character Creation</p>
+                        <p style="--accent-color:teal;">Web Hosted</p>
+                    </div>
+                    <p>Build your own typing quirks and easily convert text into them! Includes beta troll presets, making it a great tool for writing canon character dialogue as well.</p>
+                </div>
+                <div class="previewimage" style="background-image: url(thumbnails/quirkbuilder.png)"></div>
+            </div>
+        </a>
+        <a href="https://flaringk.github.io/textboxy/" class="option tool webhost imagegenerator">
+            <div class="container">
+                <div class="padding scroll">
+                    <h2>Homestuck Textbox Generator</h2>
+                    <p style="margin:0;">FlaringK</p>
+                    <div class="tags">
+                        <p style="--accent-color:blue;">Tool</p>
+                        <p style="--accent-color: blue">Image Generator</p>
+                        <p style="--accent-color:teal;">Web Hosted</p>
+                    </div>
+                    <p>"Generate your own homestuck textboxes. There isn't much else to it." Contains 6 canon spritesheets and a bunch from Burning Down The House.</p>
+                </div>
+                <div class="previewimage" style="background-image: url(thumbnails/textboxy.png)"></div>
+            </div>
+        </a>
+        <a href="https://inconsistentlymediocre.itch.io/homestuck-desktop-buddies" class="option program desktop shimeji">
+            <div class="container">
+                <div class="padding scroll">
+                    <h2>Homestuck Desktop Buddies</h2>
+                    <p style="margin:0;">inconsistentlyMediocre</p>
+                    <div class="tags">
+                        <p style="--accent-color:orange;">Program</p>
+                        <p style="--accent-color: orange">Shimeji</p>
+                        <p style="--accent-color: darkorange">Desktop App</p>
+                    </div>
+                    <p>Release the Beta Kids onto your desktop! They have cute little animations but mostly just hang around.</p>
+                </div>
+                <div class="previewimage" style="background-image: url(thumbnails/desktopbuddies.png)"></div>
+            </div>
+        </a>
+        <a href="https://nepeta.mozai.com/shimeji/" class="option program desktop shimeji">
+            <div class="container">
+                <div class="padding scroll">
+                    <h2>Homestuck Shimeji directory</h2>
+                    <p style="margin:0;">Mozai (additional credits listed on page)</p>
+                    <div class="tags">
+                        <p style="--accent-color:orange;">Program</p>
+                        <p style="--accent-color: orange">Shimeji</p>
+                        <p style="--accent-color: darkorange">Desktop App</p>
+                    </div>
+                    <p>A directory of Shimeji skins for various operating systems and engines (including Shimeji itself), mostly sourced from Deviantart.</p>
+                </div>
+                <div class="previewimage" style="background-image: url(thumbnails/shimeji.png)"></div>
+            </div>
+        </a>
+        <a href="https://ghostopal.neocities.org/stuck/" class="option tool webhost othergenerator mspfa">
+            <div class="container">
+                <div class="padding scroll">
+                    <h2>MSPFA Editor</h2>
+                    <p style="margin:0;">GhostOpal</p>
+                    <div class="tags">
+                        <p style="--accent-color:blue;">Tool</p>
+                        <p style="--accent-color: blue;">Other Generator</p>
+                        <p style="--accent-color:green;">MSPFA</p>
+                        <p style="--accent-color:teal;">Web Hosted</p>
+                    </div>
+                    <p>An advanced MSPFA editor for formatting your adventures. Very easy to use!</p>
+                </div>
+                <div class="previewimage" style="background-image: url(thumbnails/mspfaeditor.png)"></div>
+            </div>
+        </a>
+        <a href="http://www.farragofiction.com/DollSim/" class="option gamesmods game webhost idle">
+            <div class="container">
+                <div class="padding scroll">
+                    <h2>WigglerSim</h2>
+                    <p style="margin:0;">FarragoFiction</p>
+                    <div class="tags">
+                        <p style="--accent-color:blue;">Standalone Game</p>
+                        <p style="--accent-color:orange;">Idle Game</p>
+                        <p style="--accent-color:teal;">Web Hosted</p>
+                    </div>
+                    <p>Raise wigglers, watch them get adopted from you, then repeat the process again. Each wiggler has its own randomly generated sprite which will eventually transform into a fully grown troll!</p>
+                </div>
+                <div class="previewimage" style="background-image: url(thumbnails/wigglersim.png)"></div>
+            </div>
+        </a>
+        <a href="https://hjtfir.itch.io/pesterquest-rewritten" class="option gamesmods vn game webhost desktop">
+            <div class="container">
+                <div class="padding scroll">
+                    <h2>Pesterquest Rewritten</h2>
+                    <p style="margin:0;">EtchJetty (additional credits listed in game)</p>
+                    <div class="tags">
+                        <p style="--accent-color:blue;">Standalone Game</p>
+                        <p style="--accent-color:orange;">Visual Novel</p>
+                        <p style="--accent-color:teal;">Web Hosted</p>
+                        <p style="--accent-color:darkorange;">Desktop App</p>
+                    </div>
+                    <p>An ongoing pseudo-sequel to Pesterquest, being gradually updated with new chapters. An Act 1 demo is available on the web, with the rest being download-only.</p>
+                </div>
+                <div class="previewimage" style="background-image: url(thumbnails/pqrewritten.png)"></div>
+            </div>
+        </a>
+        <a href="https://store.steampowered.com/app/1610900/The_Genesis_Project/" class="option gamesmods game sburblike desktop">
+            <div class="container">
+                <div class="padding scroll">
+                    <h2>The Genesis Project</h2>
+                    <p style="margin:0;">Perfectly Generic Team</p>
+                    <div class="tags">
+                        <p style="--accent-color:blue;">Standalone Game</p>
+                        <p style="--accent-color:orange;">SBURB</p>
+                        <p style="--accent-color:darkorange;">Desktop App</p>
+                    </div>
+                    <p>The most in-depth SBURB recreation game out there. Make your own house and character, then control them in an isometric 3D environment not far from the original comic through the entry process and beyond! (It's a bit buggy, but I'm sure they're working on it.)</p>
+                </div>
+                <div class="previewimage" style="background-image: url(thumbnails/tgp.png)"></div>
+            </div>
+        </a>
+        <a href="https://pymxolbo.itch.io/vriska-lafufu-box" class="option gamesmods other webhost desktop">
+            <div class="container">
+                <div class="padding scroll">
+                    <h2>Vriska Lafufu in a Cardboard Box</h2>
+                    <p style="margin:0;">pymxolbo</p>
+                    <div class="tags">
+                        <p style="--accent-color:blue;">Standalone Game</p>
+                        <p style="--accent-color:orange;">Miscellaneous</p>
+                        <p style="--accent-color:teal;">Web Hosted</p>
+                        <p style="--accent-color:darkorange;">Desktop App</p>
+                    </div>
+                    <p>A Kick-The-Buddy style game where you instead play with a Vriska Lafufu. This artistically ambitious title is a must play for Homestuck fans and non-fans alike, in my book. (/s)</p>
+                </div>
+                <div class="previewimage" style="background-image: url(thumbnails/vriskalafufu.gif)"></div>
+            </div>
+        </a>
+        <a href="https://mb.srb2.org/addons/doc-scratchs-skaian-speedsters.7244/" class="option gamesmods mod other desktop">
+            <div class="container">
+                <div class="padding scroll">
+                    <h2>Doc Scratch's Skaian Speedsters</h2>
+                    <p style="margin:0;">Hydro-City-Zone (additional credits listed on page)</p>
+                    <div class="tags">
+                        <p style="--accent-color:red;">Mod</p>
+                        <p style="--accent-color:orange;">Miscellaneous</p>
+                        <p style="--accent-color:darkorange;">Desktop App</p>
+                    </div>
+                    <p>A SRB2 mod that adds a bunch of characters from Homestuck that are fully voiced. Yes, Doc Scratch is playable.</p>
+                </div>
+                <div class="previewimage" style="background-image: url(thumbnails/skaianspeedsters.png)"></div>
+            </div>
+        </a>
+        <a href="https://discord.gg/homestuck" class="option fandom discord">
+            <div class="container">
+                <div class="padding scroll">
+                    <h2>Homestuck Official</h2>
+                    <div class="tags">
+                        <p style="--accent-color:green;">Discord</p>
+                    </div>
+                    <p>The official Discord server for Homestuck. Has official media updates, frequent events, and a thriving community of over 30 thousand members!</p>
+                </div>
+                <div class="previewimage" style="background-image: url(thumbnails/hsodiscord.png)"></div>
+            </div>
+        </a>
+        <a href="https://www.pesterchum.xyz/" class="option fandom external social roleplay">
+            <div class="container">
+                <div class="padding scroll">
+                    <h2>Pesterchum.xyz</h2>
+                    <p style="margin:0;">(additional credits listed on page)</p>
+                    <div class="tags">
+                        <p style="--accent-color:green;">Original Platform</p>
+                        <p style="--accent-color:teal;">Social Media</p>
+                        <p style="--accent-color:orange;">Roleplay</p>
+                    </div>
+                    <p>A revival of the old Pesterchum-themed IRC instance. Connect online or use one of their custom clients, including a semi-deprecated Android option.</p>
+                </div>
+                <div class="previewimage" style="background-image: url(thumbnails/pesterchumxyz.png)"></div>
+            </div>
+        </a>
+        <a href="https://chittr.ing/" class="option fandom external social roleplay adult">
+            <div class="container">
+                <div class="padding scroll">
+                    <h2>Chittr</h2>
+                    <div class="tags">
+                        <p style="--accent-color:green;">Original Platform</p>
+                        <p style="--accent-color:teal;">Social Media</p>
+                        <p style="--accent-color:orange;">Roleplay</p>
+                        <p style="--accent-color:red;">18+</p>
+                    </div>
+                    <p>A roleplay platform imitating the in-universe social media Chittr from Hiveswap. You can make accounts for characters that aren't trolls, despite the implication.</p>
+                </div>
+                <div class="previewimage" style="background-image: url(thumbnails/chittr.png)"></div>
+            </div>
+        </a>
+        <a href="https://mspabooru.com/" class="option fandom external booru">
+            <div class="container">
+                <div class="padding scroll">
+                    <h2>MSPABooru</h2>
+                    <div class="tags">
+                        <p style="--accent-color:green;">Original Platform</p>
+                        <p style="--accent-color:teal;">Booru</p>
+                    </div>
+                    <p>A booru-style site dedicated to hosting Homestuck fanart and cosplay.</p>
+                </div>
+                <div class="previewimage" style="background-image: url(thumbnails/mspabooru.png)"></div>
+            </div>
+        </a>
+    </div>
+
+        <footer>
+            <!--#include virtual="/footer.html" --> 
+        </footer>
+
+    </body>
+</html>
+<script src="/assets/scripts/directory.js"></script>

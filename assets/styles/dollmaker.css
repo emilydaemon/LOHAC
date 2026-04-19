@@ -27,8 +27,8 @@
         display:grid;grid-template-columns: 25% 25% 25% 25%;row-gap: 5px;
         font-size:13px;
         align-items:center;
+        & p {padding:0px 10px;}
     }
-    .selection p {padding:0px 10px;}
 
     input, select {height:50%;max-height:100px;width:100%;}
 
@@ -43,6 +43,6 @@
     .credits {
         width:100%;
         color:light-dark(#0026bd, #53baff);
-    }
 
-    .credits td {width:50%;}
+        & td {width:50%;}
+    }
