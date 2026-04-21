@@ -1,9 +1,7 @@
 :root {
     --mspa-grey: #efefef;
-    --dark-grey: #292929;
-    --grey-white: #dadada;
-    --lohac-red: #b30707;
-    --lohac-dark-red: #80050b;
+    --dark-grey: #1e1e1e;
+    --grey-white: #ededed;
     scrollbar-color: grey transparent;
 }
 
@@ -21,20 +19,23 @@ body {
     background-size: 128px;
     background-position: 128px 128px;
     margin: 0;
+    font-family:"CreatoRegular";
 }
 
 .divider {
     border-width: 4px 0;
-    border-style: solid;
+    border-style: outset;
     border-color: var(--lohac-red);
-    background-color: var(--lohac-dark-red);
+    background: linear-gradient(var(--lohac-dark-red), var(--lohac-red));
     min-height: 20px;
+    color:white;
 }
 
 .banner {
     background: url(/assets/bg_lohac.gif);
     background-size: cover;
-    background-position:center;
+    background-attachment:fixed;
+    background-position:bottom;
     width: 100%;
     padding-top: 70px;
     image-rendering: pixelated;
@@ -63,7 +64,13 @@ a {
     text-decoration: none;
 }
 
+h1, h2, h3, h4, h5, h6 {
+    font-family: "CreatoBold";
+    font-weight:normal;
+}
+
 .container {
+
     color: black;
     background-color: var(--mspa-grey);
     backdrop-filter: blur(5px);
@@ -79,13 +86,12 @@ a {
     & h1,
     h2,
     h3 {
+        font-family:courier;
+        font-weight:bold;
+        font-size:180%;
         margin: 0;
     }
 
-}
-
-a:hover .container {
-    scale: 101%;
 }
 
 img {

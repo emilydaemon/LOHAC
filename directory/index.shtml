@@ -1,13 +1,14 @@
 <html>
     <head>
+        <link rel="stylesheet" href="/assets/styles/fonts.css">
         <link rel="stylesheet" href="/assets/styles/navigation.css">
         <link rel="stylesheet" href="/assets/styles/directory.css">
         <link rel="stylesheet" href="/assets/styles/basic.css">
         <link rel="favicon" href="/favicon.ico">
 
         <meta name="viewport" content="width=device-width, initial-scale=1.0, interactive-widget=resizes-content"> 
-        <meta content="Homestuck Fandom - The Homestuck Clubhouse" property="og:title">
-        <meta content="Meet the Homestuck Fandom! This is a list of Fandom social media spaces that you can engage in as a fan." property="og:description">
+        <meta content="Homestuck Fandom Directory - LOHAC.xyz" property="og:title">
+        <meta content="A comprehensive and constantly expanding list of various types of fandom creations and projects." property="og:description">
     	<meta content="/assets/favicon.png" property="og:image">
     	<meta content="#e00707" data-react-helmet="true" name="theme-color">
     </head>

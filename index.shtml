@@ -1,16 +1,17 @@
 <html lang="en">
 
 <head>
-    <title>The Homestuck Clubhouse</title>
+    <title>LOHAC.xyz</title>
 
+    <link rel="stylesheet" href="/assets/styles/fonts.css">
     <link rel="stylesheet" href="/assets/styles/basic.css">
     <link rel="stylesheet" href="/assets/styles/navigation.css">
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0, interactive-widget=resizes-content"> 
-    <meta content="https://homestuck.club" property="og:url">
-    <meta content="https://homestuck.club/favicon.png" property="og:image">
-    <meta content="#15ee15" data-react-helmet="true" name="theme-color">
-    <meta content="The Homestuck Clubhouse" property="og:title">
+    <meta content="https://lohac.xyz" property="og:url">
+    <meta content="/assets/favicon.png" property="og:image">
+    <meta content="#e00707" data-react-helmet="true" name="theme-color">
+    <meta content="LOHAC.xyz" property="og:title">
     <meta content="For fans who love Homestuck" property="og:description">
 
     <link rel="icon" type="image/x-icon" href="/favicon.ico">
@@ -50,7 +51,7 @@
             <br /><br />
             <img src="/assets/logos/lohac_color.png" width="500px" style="margin-bottom:10px;">
             <p>New to the comic?</p>
-            <a class="readhomestuck_button" href="">GUIDE COMING SOON</a>
+            <a class="readhomestuck_button" href="/originals/guide/index.shtml">READ OUR GUIDE</a>
         </center>
     </div>
 

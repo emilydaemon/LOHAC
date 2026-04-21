@@ -1,0 +1,15 @@
+:root {
+    --rgb-red: #ff0000;
+    --lohac-red: #b30707;
+    --lohac-dark-red: #80050b;
+    --lohac-darker-red: #420006;
+}
+
+@font-face {
+    font-family: "CreatoRegular";
+    src: url(/assets/fonts/CreatoDisplayRegular.otf);
+}
+@font-face {
+    font-family: "CreatoBold";
+    src: url(/assets/fonts/CreatoDisplayBold.otf);
+}
