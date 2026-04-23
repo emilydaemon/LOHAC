@@ -50,16 +50,26 @@
             <option value=".idle">Idle Game</option>
             <option value=".sburblike">SBURB-like</option>
             <option value=".rpg">RPG</option>
+            <option value=".fighting">Fighting/Action</option>
+            <option value=".puzzle">Puzzle/Strategy</option>
             <option value=".other">Miscellaneous</option>
             <option disabled>> Category: Communities</option>
             <option value=".fandom">Show All from Communities</option>
             <option value=".discord">Discord</option>
             <option value=".tumblr">Tumblr</option>
             <option value=".twitter">Twitter</option>
-            <option value=".other">Other Platforms</option>
+            <option value=".otherplatform">Other Platforms</option>
             <option value=".external">Original Platform</option>
             <option value=".social">Social Media</option>
             <option value=".booru">Booru</option>
+            <option disabled>> Category: Video and Audio Content</option>
+            <option value=".videoaudio">Show All from Video and Audio Content</option>
+            <option value=".video">Video Content</option>
+            <option value=".podcast">Podcast</option>
+            <option disabled>> Category: Collabs and Events</option>
+            <option disabled>> Category: Fanfiction</option>
+            <option value=".fanfic">Show All from Fanfiction</option>
+            <option value=".fanadventure">Fan Adventure</option>
             <option disabled>> Other Tags</option>
             <option value=".roleplay">Roleplay</option>
             <option value=".adult">18+</option>
@@ -70,12 +80,14 @@
             <option value=".mspfa">MSPFA</option>
         </select>
         </div>
+        <div id="resultscount"></div>
         <div class="options">
         <a href="/originals/discord.html" class="option fandom discord">
             <div class="container">
                 <div class="padding scroll">
                     <h2>Land of Heat and Clockwork</h2>
                     <div class="tags">
+                        <p style="--accent-color:darkred;">Community</p>
                         <p style="--accent-color:green;">Discord</p>
                     </div>
                     <p>Discuss LOHAC.xyz, the site you're currently using, along with the media it is based on.</p>
@@ -90,7 +102,7 @@
                     <h2>The TrollMaker</h2>
                     <p style="margin:0;">HSCH (additional credits listed on page)</p>
                     <div class="tags">
-                        <p style="--accent-color:blue;">Tool</p>
+                        <p style="--accent-color:darkred;">Tool</p>
                         <p style="--accent-color: blue">Image Generator</p>
                         <p style="--accent-color: purple">Character Creation</p>
                         <p style="--accent-color:var(--lohac-red);">Available on LOHAC</p>
@@ -107,7 +119,7 @@
                     <h2>Shipixels</h2>
                     <p style="margin:0;">HSCH, Feastings (additional credits listed on page)</p>
                     <div class="tags">
-                        <p style="--accent-color:blue;">Tool</p>
+                        <p style="--accent-color:darkred;">Tool</p>
                         <p style="--accent-color: violet">Image Generator</p>
                         <p style="--accent-color: darkred">Shipping</p>
                         <p style="--accent-color:var(--lohac-red);">Available on LOHAC</p>
@@ -124,7 +136,7 @@
                     <h2>The Classpect Connector</h2>
                     <p style="margin:0;">Nino Roshi AKA caprineCappuccino</p>
                     <div class="tags">
-                        <p style="--accent-color:blue;">Tool</p>
+                        <p style="--accent-color:darkred;">Tool</p>
                         <p style="--accent-color:lime;color:black;">SBURB & Classpecting</p>
                         <p style="--accent-color:teal;">Web Hosted</p>
                     </div>
@@ -139,7 +151,7 @@
                     <h2>DollSim</h2>
                     <p style="margin:0;">FarragoFiction</p>
                     <div class="tags">
-                        <p style="--accent-color:blue;">Tool</p>
+                        <p style="--accent-color:darkred;">Tool</p>
                         <p style="--accent-color: blue">Image Generator</p>
                         <p style="--accent-color: purple">Character Creation</p>
                         <p style="--accent-color:teal;">Web Hosted</p>
@@ -155,7 +167,7 @@
                     <h2>SburbSim</h2>
                     <p style="margin:0;">FarragoFiction</p>
                     <div class="tags">
-                        <p style="--accent-color:orange;">Program</p>
+                        <p style="--accent-color:darkred;">Program</p>
                         <p style="--accent-color:orange;">Simulator</p>
                         <p style="--accent-color:teal;">Web Hosted</p>
                         <p style="--accent-color:lime;color:black;">SBURB & Classpecting</p>
@@ -171,9 +183,9 @@
                     <h2>Quadrant Maker</h2>
                     <p style="margin:0;">FlaringK</p>
                     <div class="tags">
-                        <p style="--accent-color:blue;">Tool</p>
+                        <p style="--accent-color:darkred;">Tool</p>
                         <p style="--accent-color:blue;">Image Generator</p>
-                        <p style="--accent-color:darkred;">Shipping</p>
+                        <p style="--accent-color:#ffaaaa;">Shipping</p>
                         <p style="--accent-color:teal;">Web Hosted</p>
                     </div>
                     <p>A tool for generating quadrant pairing GIFs based on panels from the original comic. Put in your favorite pairing, or use for a ship from a completely different series!</p>
@@ -187,7 +199,7 @@
                     <h2>Homestuck5plus</h2>
                     <p style="margin:0;">FlaringK (additional credits listed on page)</p>
                     <div class="tags">
-                        <p style="--accent-color:blue;">Tool</p>
+                        <p style="--accent-color:darkred;">Tool</p>
                         <p style="--accent-color:grey;">Fan Writing</p>
                         <p style="--accent-color:green;">MSPFA</p>
                         <p style="--accent-color:teal;">Web Hosted</p>
@@ -203,7 +215,7 @@
                     <h2>GIFstuck</h2>
                     <p style="margin:0;">FlaringK</p>
                     <div class="tags">
-                        <p style="--accent-color:blue;">Tool</p>
+                        <p style="--accent-color:darkred;">Tool</p>
                         <p style="--accent-color: blue">Image Generator</p>
                         <p style="--accent-color:green;">MSPFA</p>
                         <p style="--accent-color:teal;">Web Hosted</p>
@@ -219,7 +231,7 @@
                     <h2>Homestuck Map Generator</h2>
                     <p style="margin:0;">FlaringK</p>
                     <div class="tags">
-                        <p style="--accent-color:blue;">Tool</p>
+                        <p style="--accent-color:darkred;">Tool</p>
                         <p style="--accent-color: blue;">Other Generator</p>
                         <p style="--accent-color:green;">MSPFA</p>
                         <p style="--accent-color:teal;">Web Hosted</p>
@@ -236,7 +248,7 @@
                     <h2>Flare's CSS Textboxes</h2>
                     <p style="margin:0;">FlaringK</p>
                     <div class="tags">
-                        <p style="--accent-color:blue;">Tool</p>
+                        <p style="--accent-color:darkred;">Tool</p>
                         <p style="--accent-color: blue">Other Generator</p>
                         <p style="--accent-color:green;">MSPFA</p>
                         <p style="--accent-color:teal;">Web Hosted</p>
@@ -252,7 +264,7 @@
                     <h2>Homestuck Quirk Builder</h2>
                     <p style="margin:0;">FlaringK</p>
                     <div class="tags">
-                        <p style="--accent-color:blue;">Tool</p>
+                        <p style="--accent-color:darkred;">Tool</p>
                         <p style="--accent-color: blue">Text Generator</p>
                         <p style="--accent-color:grey;">Fan Writing</p>
                         <p style="--accent-color:green;">MSPFA</p>
@@ -270,7 +282,7 @@
                     <h2>Homestuck Textbox Generator</h2>
                     <p style="margin:0;">FlaringK</p>
                     <div class="tags">
-                        <p style="--accent-color:blue;">Tool</p>
+                        <p style="--accent-color:darkred;">Tool</p>
                         <p style="--accent-color: blue">Image Generator</p>
                         <p style="--accent-color:teal;">Web Hosted</p>
                     </div>
@@ -285,7 +297,7 @@
                     <h2>Homestuck Desktop Buddies</h2>
                     <p style="margin:0;">inconsistentlyMediocre</p>
                     <div class="tags">
-                        <p style="--accent-color:orange;">Program</p>
+                        <p style="--accent-color:darkred;">Program</p>
                         <p style="--accent-color: orange">Shimeji</p>
                         <p style="--accent-color: darkorange">Desktop App</p>
                     </div>
@@ -300,7 +312,7 @@
                     <h2>Homestuck Shimeji directory</h2>
                     <p style="margin:0;">Mozai (additional credits listed on page)</p>
                     <div class="tags">
-                        <p style="--accent-color:orange;">Program</p>
+                        <p style="--accent-color:darkred;">Program</p>
                         <p style="--accent-color: orange">Shimeji</p>
                         <p style="--accent-color: darkorange">Desktop App</p>
                     </div>
@@ -315,7 +327,7 @@
                     <h2>MSPFA Editor</h2>
                     <p style="margin:0;">GhostOpal</p>
                     <div class="tags">
-                        <p style="--accent-color:blue;">Tool</p>
+                        <p style="--accent-color:darkred;">Tool</p>
                         <p style="--accent-color: blue;">Other Generator</p>
                         <p style="--accent-color:green;">MSPFA</p>
                         <p style="--accent-color:teal;">Web Hosted</p>
@@ -331,7 +343,7 @@
                     <h2>WigglerSim</h2>
                     <p style="margin:0;">FarragoFiction</p>
                     <div class="tags">
-                        <p style="--accent-color:blue;">Standalone Game</p>
+                        <p style="--accent-color:darkred;">Standalone Game</p>
                         <p style="--accent-color:orange;">Idle Game</p>
                         <p style="--accent-color:teal;">Web Hosted</p>
                     </div>
@@ -346,7 +358,7 @@
                     <h2>Pesterquest Rewritten</h2>
                     <p style="margin:0;">EtchJetty (additional credits listed in game)</p>
                     <div class="tags">
-                        <p style="--accent-color:blue;">Standalone Game</p>
+                        <p style="--accent-color:darkred;">Standalone Game</p>
                         <p style="--accent-color:orange;">Visual Novel</p>
                         <p style="--accent-color:teal;">Web Hosted</p>
                         <p style="--accent-color:darkorange;">Desktop App</p>
@@ -362,8 +374,8 @@
                     <h2>The Genesis Project</h2>
                     <p style="margin:0;">Perfectly Generic Team</p>
                     <div class="tags">
-                        <p style="--accent-color:blue;">Standalone Game</p>
-                        <p style="--accent-color:orange;">SBURB</p>
+                        <p style="--accent-color:darkred;">Standalone Game</p>
+                        <p style="--accent-color:orange;">SBURB-like</p>
                         <p style="--accent-color:darkorange;">Desktop App</p>
                     </div>
                     <p>The most in-depth SBURB recreation game out there. Make your own house and character, then control them in an isometric 3D environment not far from the original comic through the entry process and beyond! (It's a bit buggy, but I'm sure they're working on it.)</p>
@@ -377,7 +389,7 @@
                     <h2>Vriska Lafufu in a Cardboard Box</h2>
                     <p style="margin:0;">pymxolbo</p>
                     <div class="tags">
-                        <p style="--accent-color:blue;">Standalone Game</p>
+                        <p style="--accent-color:darkred;">Standalone Game</p>
                         <p style="--accent-color:orange;">Miscellaneous</p>
                         <p style="--accent-color:teal;">Web Hosted</p>
                         <p style="--accent-color:darkorange;">Desktop App</p>
@@ -391,13 +403,14 @@
             <div class="container">
                 <div class="padding scroll">
                     <h2>Doc Scratch's Skaian Speedsters</h2>
+                    <p style="margin-top:0;">Mod for: Dr. Robotnik's Ring Racers</p>
                     <p style="margin:0;">Hydro-City-Zone (additional credits listed on page)</p>
                     <div class="tags">
-                        <p style="--accent-color:red;">Mod</p>
+                        <p style="--accent-color:darkred;">Mod</p>
                         <p style="--accent-color:orange;">Miscellaneous</p>
                         <p style="--accent-color:darkorange;">Desktop App</p>
                     </div>
-                    <p>A SRB2 mod that adds a bunch of characters from Homestuck that are fully voiced. Yes, Doc Scratch is playable.</p>
+                    <p>Adds a bunch of characters from Homestuck that are fully voiced. Yes, Doc Scratch is playable.</p>
                 </div>
                 <div class="previewimage" style="background-image: url(thumbnails/skaianspeedsters.png)"></div>
             </div>
@@ -407,6 +420,7 @@
                 <div class="padding scroll">
                     <h2>Homestuck Official</h2>
                     <div class="tags">
+                        <p style="--accent-color:darkred;">Community</p>
                         <p style="--accent-color:green;">Discord</p>
                     </div>
                     <p>The official Discord server for Homestuck. Has official media updates, frequent events, and a thriving community of over 30 thousand members!</p>
@@ -420,6 +434,7 @@
                     <h2>Pesterchum.xyz</h2>
                     <p style="margin:0;">(additional credits listed on page)</p>
                     <div class="tags">
+                        <p style="--accent-color:darkred;">Community</p>
                         <p style="--accent-color:green;">Original Platform</p>
                         <p style="--accent-color:teal;">Social Media</p>
                         <p style="--accent-color:orange;">Roleplay</p>
@@ -434,6 +449,7 @@
                 <div class="padding scroll">
                     <h2>Chittr</h2>
                     <div class="tags">
+                        <p style="--accent-color:darkred;">Community</p>
                         <p style="--accent-color:green;">Original Platform</p>
                         <p style="--accent-color:teal;">Social Media</p>
                         <p style="--accent-color:orange;">Roleplay</p>
@@ -449,12 +465,284 @@
                 <div class="padding scroll">
                     <h2>MSPABooru</h2>
                     <div class="tags">
+                        <p style="--accent-color:darkred;">Community</p>
                         <p style="--accent-color:green;">Original Platform</p>
                         <p style="--accent-color:teal;">Booru</p>
                     </div>
                     <p>A booru-style site dedicated to hosting Homestuck fanart and cosplay.</p>
                 </div>
                 <div class="previewimage" style="background-image: url(thumbnails/mspabooru.png)"></div>
+            </div>
+        </a>
+        <a href="https://wiiuski.itch.io/strife-project" class="option game fighting desktop">
+            <div class="container">
+                <div class="padding scroll">
+                    <h2>Homestuck Strife Project</h2>
+                    <p style="margin:0;">Wiiuski (additional credits listed on page)</p>
+                    <div class="tags">
+                        <p style="--accent-color:darkred;">Standalone Game</p>
+                        <p style="--accent-color:orange;">Fighting/Action</p>
+                        <p style="--accent-color:darkorange;">Desktop App</p>
+                    </div>
+                    <p>An in-development fighting game set in the Homestuck universe, styled after the comic's STRIFE sequences. As of writing, the game has 5 playable characters and 5 stages.</p>
+                </div>
+                <div class="previewimage" style="background-image: url(thumbnails/strifeproject.png)"></div>
+            </div>
+        </a>
+        <a href="https://store.steampowered.com/app/3703690/Felt_Mansion/" class="option game rpg desktop">
+            <div class="container">
+                <div class="padding scroll">
+                    <h2>Felt Mansion</h2>
+                    <p style="margin:0;">Haeldral</p>
+                    <div class="tags">
+                        <p style="--accent-color:darkred;">Standalone Game</p>
+                        <p style="--accent-color:orange;">RPG</p>
+                        <p style="--accent-color:darkorange;">Desktop App</p>
+                    </div>
+                    <p>An RPG game based on Homestuck, set in the eponymous Felt Mansion. "Save the young Handmaid from the clutches of the fearsome Doc Scratch!"</p>
+                </div>
+                <div class="previewimage" style="background-image: url(thumbnails/feltmansion.png)"></div>
+            </div>
+        </a>
+        <a href="http://lorenhernandez.com/puzzlestuck/" class="option gamesmods game puzzle desktop">
+            <div class="container">
+                <div class="padding scroll">
+                    <h2>Puzzlestuck</h2>
+                    <p style="margin:0;">Loren Hernandez</p>
+                    <div class="tags">
+                        <p style="--accent-color:darkred;">Standalone Game</p>
+                        <p style="--accent-color:orange;">Puzzle/Strategy</p>
+                        <p style="--accent-color:darkorange;">Desktop App</p>
+                    </div>
+                    <p>A match-3 puzzle RPG based on Homestuck. Apparently very critically acclaimed!</p>
+                </div>
+                <div class="previewimage" style="background-image: url(thumbnails/puzzlestuck.gif)"></div>
+            </div>
+        </a>
+        <a href="https://flaringk.itch.io/grist-torrent" class="option gamesmods game puzzle desktop webhost">
+            <div class="container">
+                <div class="padding scroll">
+                    <h2>GristTorrent+</h2>
+                    <p style="margin:0;">FlaringK</p>
+                    <div class="tags">
+                        <p style="--accent-color:darkred;">Standalone Game</p>
+                        <p style="--accent-color:orange;">Puzzle/Strategy</p>
+                        <p style="--accent-color:teal;">Web Hosted</p>
+                        <p style="--accent-color:darkorange;">Desktop App</p>
+                    </div>
+                    <p>A Suika-like themed after Homestuck's GristTorrent.</p>
+                </div>
+                <div class="previewimage" style="background-image: url(thumbnails/gristtorrent.png)"></div>
+            </div>
+        </a>
+        <a href="https://forums.court-records.net/viewtopic.php?f=36&t=27763" class="option gamesmods game vn desktop">
+            <div class="container">
+                <div class="padding scroll">
+                    <h2>Alternian Turnabout: Aradia Megido</h2>
+                    <p style="margin:0;">EightHeadedDragon</p>
+                    <div class="tags">
+                        <p style="--accent-color:darkred;">Standalone Game</p>
+                        <p style="--accent-color:orange;">Visual Novel</p>
+                        <p style="--accent-color:darkorange;">Desktop App</p>
+                    </div>
+                    <p>A complete Ace Attorney custom case based on Homestuck. Defend your client (Tavros) from prosecutor Vriska Serket!</p>
+                </div>
+                <div class="previewimage" style="background-image: url(thumbnails/alternianturnabout.gif)"></div>
+            </div>
+        </a>
+        <a href="https://forums.court-records.net/viewtopic.php?f=36&t=27763" class="option gamesmods game fighting desktop">
+            <div class="container">
+                <div class="padding scroll">
+                    <h2>Dave: Accelerate</h2>
+                    <p style="margin:0;">grnr</p>
+                    <div class="tags">
+                        <p style="--accent-color:darkred;">Standalone Game</p>
+                        <p style="--accent-color:orange;">Fighting/Action</p>
+                        <p style="--accent-color:darkorange;">Desktop App</p>
+                    </div>
+                    <p>A fanmade companion piece to the soundpage of the same name. Play as Dave and beat up a bunch of imps. You can go back in time, too!</p>
+                </div>
+                <div class="previewimage" style="background-image: url(thumbnails/daveaccelerate.png)"></div>
+            </div>
+        </a>
+        <a href="https://v2.overseerreboot.xyz/" class="option gamesmods game sburblike webhost">
+            <div class="container">
+                <div class="padding scroll">
+                    <h2>The Overseer Project</h2>
+                    <p style="margin:0;">jadedDraconevix (additional credits listed on page)</p>
+                    <div class="tags">
+                        <p style="--accent-color:darkred;">Standalone Game</p>
+                        <p style="--accent-color:orange;">SBURB-like</p>
+                        <p style="--accent-color:teal;">Web Hosted</p>
+                    </div>
+                    <p>A browser MMORPG emulating the gameplay of Sburb. Make an account and play with your friends online!</p>
+                </div>
+                <div class="previewimage" style="background-image: url(thumbnails/theoverseerproject.png)"></div>
+            </div>
+        </a>
+        <a href="https://github.com/iiiaaa123/Balatrostuck/tree/main" class="option mod other desktop">
+            <div class="container">
+                <div class="padding scroll">
+                    <h2>Balatrostuck</h2>
+                    <p style="margin-top:0;">Mod for: Balatro</p>
+                    <p style="margin:0;">(additional credits listed on page)</p>
+                    <div class="tags">
+                        <p style="--accent-color:darkred;">Mod</p>
+                        <p style="--accent-color:orange;">Miscellaneous</p>
+                        <p style="--accent-color:darkorange;">Desktop App</p>
+                    </div>
+                    <p>A mod that adds Homestuck-themed mechanics and Jokers.</p>
+                </div>
+                <div class="previewimage" style="background-image: url(thumbnails/balatrostuck.png)"></div>
+            </div>
+        </a>
+        <a href="https://gamebanana.com/search?_sOrder=best_match&_idGameRow=9790&_sSearchString=homestuck" class="option gamesmods mod reskin desktop">
+            <div class="container">
+                <div class="padding scroll">
+                    <h2>Homestuck Character Pack</h2>
+                    <p style="margin-top:0;">Mod(s) for: SM64 CO-OP DX / SM64 PC Port</p>
+                    <p style="margin:0;">Ghost1606360 (additional credits listed on pages)</p>
+                    <div class="tags">
+                        <p style="--accent-color:darkred;">Mod</p>
+                        <p style="--accent-color:orange;">Reskin</p>
+                        <p style="--accent-color:darkorange;">Desktop App</p>
+                    </div>
+                    <p>A series of Homestuck character skins. Has full voice acting and everything!</p>
+                </div>
+                <div class="previewimage" style="background-image: url(thumbnails/coopdxskins.png)"></div>
+            </div>
+        </a>
+        <a href="https://sburbmon.tumblr.com/download" class="option mod other desktop mobile">
+            <div class="container">
+                <div class="padding scroll">
+                    <h2>Sburbmon</h2>
+                    <p style="margin-top:0;">Mod for: Pokemon FireRed</p>
+                    <div class="tags">
+                        <p style="--accent-color:darkred;">Mod</p>
+                        <p style="--accent-color:orange;">Miscellaneous</p>
+                        <p style="--accent-color:darkorange;">Desktop App</p>
+                        <p style="--accent-color:darkviolet;">Mobile App</p>
+                    </div>
+                    <p>A romhack themed after Homestuck. Changes include things like Pokemon and an overhauled map. Also includes a tutorial for running on Android, if you're eager.</p>
+                </div>
+                <div class="previewimage" style="background-image: url(thumbnails/sburbmon.png)"></div>
+            </div>
+        </a>
+        <a href="https://steamcommunity.com/sharedfiles/filedetails/?id=2361735616" class="option gamesmods mod reskin desktop">
+            <div class="container">
+                <div class="padding scroll">
+                    <h2>Definitive Homestuck Reskins</h2>
+                    <p style="margin-top:0;">Mod for: The Binding of Isaac: Rebirth (Repentance required)</p>
+                    <p style="margin:0;">peas</p>
+                    <div class="tags">
+                        <p style="--accent-color:darkred;">Mod</p>
+                        <p style="--accent-color:orange;">Reskin</p>
+                        <p style="--accent-color:darkorange;">Desktop App</p>
+                    </div>
+                    <p>Adds Homestuck-themed sprites for The Zodiac and Planetary signs, as well as adding sprites for things like the Magic 8 Ball and a new costume for Loki's Horns.</p>
+                </div>
+                <div class="previewimage" style="background-image: url(thumbnails/definitiveisaacreskins.png)"></div>
+            </div>
+        </a>
+        <a href="https://steamcommunity.com/workshop/browse/?appid=204360&searchtext=homestuck&childpublishedfileid=0&browsesort=textsearch" class="option gamesmods mod reskin desktop">
+            <div class="container">
+                <div class="padding scroll">
+                    <h2>Homestuck Character Skins</h2>
+                    <p style="margin-top:0;">Mod(s) for: Castle Crashers</p>
+                    <div class="tags">
+                        <p style="--accent-color:darkred;">Mod</p>
+                        <p style="--accent-color:orange;">Reskin</p>
+                        <p style="--accent-color:darkorange;">Desktop App</p>
+                        
+                    </div>
+                    <p>Homestuck skins for Castle Crashers made by various authors.</p>
+                </div>
+                <div class="previewimage" style="background-image: url(thumbnails/homestuckcrashers.png)"></div>
+            </div>
+        </a>
+        <a href="https://www.nexusmods.com/hades/mods/152" class="option gamesmods mod reskin desktop">
+            <div class="container">
+                <div class="padding scroll">
+                    <h2>MEGIDO</h2>
+                    <p style="margin-top:0;">Mod for: Hades</p>
+                    <p style="margin:0;">EtchJetty (additional credits listed on pages)</p>
+                    <div class="tags">
+                        <p style="--accent-color:darkred;">Mod</p>
+                        <p style="--accent-color:orange;">Reskin</p>
+                        <p style="--accent-color:darkorange;">Desktop App</p>
+                    </div>
+                    <p>Swaps the characters in-game to various Homestuck characters. SUPER FUCKING CANCELLED</p>
+                </div>
+                <div class="previewimage" style="background-image: url(thumbnails/hadesmegido.gif)"></div>
+            </div>
+        </a>
+        <a href="https://mspfa.com/" class="option external">
+            <div class="container">
+                <div class="padding scroll">
+                    <h2>MS Paint Fan Adventures</h2>
+                    <div class="tags">
+                        <p style="--accent-color:darkred;">Community</p>
+                        <p style="--accent-color:darkred;">Original Platform</p>
+                    </div>
+                    <p>A comic hosting site for MS Paint Adventures-style comics. Simple yet incredibly powerful with the right experience.</p>
+                </div>
+                <div class="previewimage" style="background-image: url(thumbnails/mspfa.png)"></div>
+            </div>
+        </a>
+        <a href="https://mspfa.com/?s=236&p=1" class="option fanfic fanadventure">
+            <div class="container">
+                <div class="padding scroll">
+                    <h2>Alabaster: The Doomed Session</h2>
+                    <div class="tags">
+                        <p style="--accent-color:darkred;">Fanfiction</p>
+                        <p style="--accent-color:green;">Fan Adventure</p>
+                    </div>
+                    <p>The oldest ongoing Homestuck fanadventure. A story of horror and tragedy!</p>
+                </div>
+                <div class="previewimage" style="background-image: url(thumbnails/alabaster.png)"></div>
+            </div>
+        </a>
+        <a href="https://mspaintadventures.itch.io/troubled-cosmos" class="option gamesmods game other webhost desktop">
+            <div class="container">
+                <div class="padding scroll">
+                    <h2>Troubled Cosmos</h2>
+                    <p style="margin:0;">Andrew Hussie (additional credits listed on page)</p>
+                    <div class="tags">
+                        <p style="--accent-color:darkred;">Standalone Game</p>
+                        <p style="--accent-color:orange;">Other</p>
+                        <p style="--accent-color:teal;">Web Hosted</p>
+                        <p style="--accent-color:darkorange;">Desktop App</p>
+                    </div>
+                    <p>A collection of original characters dedicated to the public domain, created by Andrew Hussie. Not exactly a fanwork, but it is included to respect its status as part of Hussie's extended body of work.</p>
+                </div>
+                <div class="previewimage" style="background-image: url(thumbnails/troubledcosmos.png)"></div>
+            </div>
+        </a>
+        <a href="https://www.youtube.com/channel/UCVePKgH7G-NBkztF5brtoEA" class="option videoaudio podcast mspfa">
+            <div class="container">
+                <div class="padding scroll">
+                    <h2>openhouse</h2>
+                    <p style="margin:0;">(credits listed in each episode description)</p>
+                    <div class="tags">
+                        <p style="--accent-color:darkred;">Podcast</p>
+                        <p style="--accent-color:green;">MSPFA</p>
+                    </div>
+                    <p>A YouTube podcast dedicated to discussing Homestuck fanworks.</p>
+                </div>
+                <div class="previewimage" style="background-image: url(thumbnails/openhouse.png)"></div>
+            </div>
+        </a>
+        <a href="https://www.youtube.com/playlist?list=PLe3E4kx3tTwxOy6xmrnWUvk_w_kQ5ynIR" class="option videoaudio podcast">
+            <div class="container">
+                <div class="padding scroll">
+                    <h2>Homespeak</h2>
+                    <p style="margin:0;">Juno, HisoNoKami (additional credits listed in each episode description)</p>
+                    <div class="tags">
+                        <p style="--accent-color:darkred;">Podcast</p>
+                    </div>
+                    <p>A Homestuck-centered podcast. Currently has 2 episodes, both dedicated to talking with various Homestuck fandom figures.</p>
+                </div>
+                <div class="previewimage" style="background-image: url(thumbnails/homespeak.png)"></div>
             </div>
         </a>
     </div>
