@@ -1,0 +1,88 @@
+<head>
+    <link rel="stylesheet" href="/assets/styles/fonts.css">
+    <link rel="stylesheet" href="/assets/styles/basic.css">
+    <link rel="stylesheet" href="/assets/styles/navigation.css">
+
+    <title>Homestuck Art Assets - LOHAC.xyz</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, interactive-widget=resizes-content"> 
+    <meta content="https://lohac.xyz" property="og:url">
+    <meta content="/assets/favicon.png" property="og:image">
+    <meta content="#e00707" data-react-helmet="true" name="theme-color">
+    <meta content="Homestuck Resources - LOHAC.xyz" property="og:title">
+    <meta content="A directory of various resources archived on our site." property="og:description">
+</head>
+
+<body>
+    <nav>
+        <!--#include virtual="/navbar.html" --> 
+    </nav>
+    <main>
+        <div class="divider">
+            <h1 style="text-align: center;">Art Resources</h1>
+        </div>
+        <div class="categories">
+            <a href="/archive/resources/art-assets/index.shtml">
+                <div class="container">
+                    <img src="/assets/category/artassets.png">
+                    <div class="padding">
+                        <h2>Homestuck Art Assets</h2>
+                        <p>Art assets from the comic, as well as original assets made by fandom members.</p>
+                    </div>
+                </div>
+            </a>
+            <a href="/archive/resources/art-guides/index.html">
+                <div class="container">
+                    <img src="/assets/category/artguides.png">
+                    <div class="padding">
+                        <h2>Homestuck Art Guides</h2>
+                        <p>Tutorials, analysis and image guides.</p>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div class="divider">
+            <h1 style="text-align: center;">Music Resources</h1>
+        </div>
+        <div class="categories">
+            <a href="https://hsmusic.wiki">
+                <div class="container">
+                    <img src="/assets/category/musicwiki.png">
+                    <div class="padding">
+                        <h2>Homestuck Music Wiki</h2>
+                        <p>Easily accessible information about Homestuck's official and unofficial music tracks.</p>
+                    </div>
+                </div>
+            </a>
+            <a href="https://homestuck.bandcamp.com/">
+                <div class="container">
+                    <img src="/assets/category/bandcamp.png">
+                    <div class="padding">
+                        <h2>Homestuck Official Bandcamp</h2>
+                        <p>Buy digital albums of Homestuck music to support the team!</p>
+                    </div>
+                </div>
+            </a>
+            <a href="https://drive.google.com/drive/folders/1xQXQRN1UANCADnP02CCQZcO2ydhOBz0R">
+                <div class="container">
+                    <img src="/assets/category/musicsamples.png">
+                    <div class="padding">
+                        <h2>Homestuck Music Samples</h2>
+                        <p>A Google Drive full of samples, VSTs and soundfonts used in songs from the comic.</p>
+                    </div>
+                </div>
+            </a>
+            <a href="https://sanctferum.tumblr.com/post/638058644066435072/homestuck-sound-test-12202020-edition">
+                <div class="container">
+                    <img src="/assets/category/soundtest.png">
+                    <div class="padding">
+                        <h2>Homestuck Sound Test</h2>
+                        <p>A sound test of various unused or unreleased tracks from Homestuck.</p>
+                    </div>
+                </div>
+            </a>
+        </div>
+    </main>
+    <footer>
+        <!--#include virtual="/footer.html" --> 
+    </footer>
+</body>
